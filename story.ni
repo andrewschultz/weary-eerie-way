@@ -22,7 +22,15 @@ book X Ray Wrecks
 
 X Ray Wrecks is north of Bill Ill Bay. It is east of Roar Day Drawer.
 
+book Sneer Near Say
+
 Sneer Near Say is east of X Ray Wrecks.
+
+chapter Lump Say Slump
+
+Lump Say Slump is a person in Sneer Near Say.
+
+check going north in Sneer Near Say: say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
 Stirrer Stay is north of X Ray Wrecks.
 
