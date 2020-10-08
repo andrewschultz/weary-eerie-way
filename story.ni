@@ -32,11 +32,19 @@ Lump Say Slump is a person in Sneer Near Say.
 
 check going north in Sneer Near Say: say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
+book Stirrer Stay
+
 Stirrer Stay is north of X Ray Wrecks.
+
+Lug Say Slug is a person in Stirrer Stay.
+
+check going east in Stirrer Stay: say "Not with [lug] around." instead;
 
 book Craze Raise Cay
 
 Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say.
+
+Skull Say Cull is a person in Craze Raise Cay.
 
 volume verbs
 
