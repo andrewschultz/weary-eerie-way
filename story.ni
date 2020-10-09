@@ -1,5 +1,13 @@
 "Weary Eerie Way" by Andrew Schultz
 
+volume includes
+
+include Trivial Niceties by Andrew Schultz.
+
+include Punctuation Stripper by Andrew Schultz.
+
+include Weary Eerie Way Globals by Andrew Schultz.
+
 volume rooms
 
 book Blimp Limp Bay
@@ -8,7 +16,7 @@ Blimp Limp Bay is a room.
 
 chapter Ump Gray Grump
 
-Ump Gray Grump is a person in Blimp Limp Bay.
+Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump".
 
 book Roar Day Drawer
 
@@ -28,7 +36,7 @@ Sneer Near Say is east of X Ray Wrecks.
 
 chapter Lump Say Slump
 
-Lump Say Slump is a person in Sneer Near Say.
+Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump".
 
 check going north in Sneer Near Say: say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
@@ -44,7 +52,7 @@ book Craze Raise Cay
 
 Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say.
 
-Skull Say Cull is a person in Craze Raise Cay.
+Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull".
 
 volume verbs
 
