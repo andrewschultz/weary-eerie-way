@@ -26,10 +26,27 @@ Roar Day Drawer is north of Blimp Limp Bay. printed name of Roar Day Drawer is "
 
 understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as Roar Day Drawer when always-no.
 
+check going south in Roar Day Drawer:
+	if Id Lay Lid is off-stage:
+		say "You feel a stinging in your back. The drawer spit something at you! A [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful.";
+		now player has Id Lay Lid;
+
+chapter Id Lay Lid
+
+the Id Lay Lid is a thing. printed name is "Id-Lay Lid".
 
 book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay.
+
+check going west in Bill Ill Bay:
+	if Weak Eek Whey is off-stage:
+		say "As you go back west, you step in something icky. An open jar of [whey]. It's a bit disgusting, but you don't have to eat it. You take it.";
+		now player has Weak Eek Whey;
+
+chapter Weak Eek Whey
+
+the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite pronoun is "some".
 
 book X Ray Wrecks
 
