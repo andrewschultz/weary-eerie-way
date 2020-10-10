@@ -12,7 +12,9 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room.
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if always-no]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if always-no]Steer[else]Blimp[end if]".
+
+understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when always-no.
 
 chapter Ump Gray Grump
 
@@ -20,7 +22,10 @@ Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump".
 
 book Roar Day Drawer
 
-Roar Day Drawer is north of Blimp Limp Bay.
+Roar Day Drawer is north of Blimp Limp Bay. printed name of Roar Day Drawer is "[if always-no]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of Roar Day Drawer is "[if always-no]Crate[else]Drawer[end if]".
+
+understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as Roar Day Drawer when always-no.
+
 
 book Bill Ill Bay
 
