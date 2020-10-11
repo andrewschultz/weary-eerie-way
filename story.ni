@@ -78,6 +78,70 @@ Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull".
 
 volume verbs
 
+chapter useoning
+
+to decide whether (t1 - a thing) and (t2 - a thing) are flippable:
+	if t1 is a person:
+		if t2 is not a person, yes;
+	no;
+
+useoning it with is an action applying to two things.
+
+understand the command "use" as something new.
+
+understand "use [thing]" as useing.
+understand "u [thing]" as useing.
+
+understand "use [thing] on/with [thing]" as useoning it with.
+understand "u [thing] on/with [thing]" as useoning it with.
+
+carry out useoning:
+	if debug-state is true, say "DEBUG: USEONing [noun] on [second noun].";
+	repeat through table of useons:
+		if noun is u1 entry and second noun is u2 entry:
+			if there is a pre-rule entry, abide by the pre-rule entry;
+			if there is a post-rule entry, process the post-rule entry;
+			if there is a get-point entry:
+				process the get-point entry;
+				if the rule succeeded, increment the score;
+			else:
+				increment the score;
+			if v1 entry is true, moot u1 entry;
+			if v2 entry is true, moot u2 entry;
+			if there is a new-item entry, now player has new-item entry;
+			[if debug-state is true, say "[u1 entry] mooted: [v1 entry]. [u2 entry] mooted: [v2 entry]. [if there is a new-item entry]Received [new-item entry][else]No new item[end if]. [location of u1 entry]. [location of u2 entry].";]
+			the rule succeeds;
+		if noun is u2 entry and second noun is u1 entry:
+			if debug-state is true, say "DEBUG: flip. USE [u2 entry] on [u1 entry].";
+			try useoning u1 entry with u2 entry instead;
+	abide by the wide ranging useon rule;
+	say "You don't seem to need to use, um, USE [the noun] on [the second noun].";
+	the rule succeeds.
+
+this is the wide ranging useon rule: [this is for any general rejects to help the player]
+	if second noun is the player, say "You never need to USE anything on yourself." instead;
+	continue the action;
+
+chapter useing
+
+carry out useing:
+	say "You need to USE something ON/WITH something else. At least for the initial, speed-programmed release." instead;
+
+chapter use thing on text
+
+justusing is an action applying to one thing and one topic.
+rjustusing is an action applying to one topic and one thing.
+
+understand "u [thing] on [text]" as justusing.
+understand "u [text] on [thing]" as justusing (with nouns reversed).
+
+understand "use [thing] on [text]" as justusing.
+understand "use [text] on [thing]" as justusing (with nouns reversed).
+
+carry out justusing: say "I couldn't figure what you wanted to use [the noun] with.";
+
+volume meta-verbs
+
 chapter abouting
 
 abouting is an action out of world.
