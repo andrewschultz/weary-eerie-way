@@ -8,6 +8,8 @@ include Punctuation Stripper by Andrew Schultz.
 
 include Weary Eerie Way Globals by Andrew Schultz.
 
+include Weary Eerie Way Tables by Andrew Schultz.
+
 volume rooms
 
 book Blimp Limp Bay
@@ -22,14 +24,18 @@ Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump".
 
 book Roar Day Drawer
 
-Roar Day Drawer is north of Blimp Limp Bay. printed name of Roar Day Drawer is "[if always-no]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of Roar Day Drawer is "[if always-no]Crate[else]Drawer[end if]".
+rdd is north of Blimp Limp Bay. printed name of rdd is "[if always-no]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if always-no]Crate[else]Drawer[end if]".
 
-understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as Roar Day Drawer when always-no.
+understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as rdd when Roar Day Drawer is moot.
 
 check going south in Roar Day Drawer:
 	if Id Lay Lid is off-stage:
 		say "You feel a stinging in your back. The drawer spit something at you! A [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful.";
 		now player has Id Lay Lid;
+
+chapter Roar Day Drawer
+
+the Roar Day Drawer is scenery in rdd.
 
 chapter Id Lay Lid
 
@@ -46,11 +52,11 @@ check going west in Bill Ill Bay:
 
 chapter Weak Eek Whey
 
-the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite pronoun is "some".
+the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite article of Weak Eek Whey is "some".
 
 book X Ray Wrecks
 
-X Ray Wrecks is north of Bill Ill Bay. It is east of Roar Day Drawer.
+X Ray Wrecks is north of Bill Ill Bay. It is east of rdd.
 
 book Sneer Near Say
 
@@ -84,6 +90,8 @@ to decide whether (t1 - a thing) and (t2 - a thing) are flippable:
 	if t1 is a person:
 		if t2 is not a person, yes;
 	no;
+
+useing is an action applying to one thing. [ this is not, um, used, but it's still important ]
 
 useoning it with is an action applying to two things.
 
@@ -140,6 +148,21 @@ understand "use [text] on [thing]" as justusing (with nouns reversed).
 
 carry out justusing: say "I couldn't figure what you wanted to use [the noun] with.";
 
+volume options
+
+chapter rming
+
+rming is an action applying to nothing.
+
+understand the command "rm" as something new.
+
+understand "rm" as rming.
+
+carry out rming:
+	now opt-short-names is whether or not opt-short-names is false;
+	say "Short room view is now [on-off of opt-short-names] for visited rooms.";
+	the rule succeeds.
+
 volume meta-verbs
 
 chapter abouting
@@ -171,3 +194,6 @@ carry out verbsing:
 	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
 	the rule succeeds;
 
+volume out of world
+
+Aced Way is a room. [this is the moot room]

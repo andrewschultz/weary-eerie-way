@@ -6,7 +6,7 @@ volume useons
 
 table of useons [xxuse2]
 u1	u2	v1	v2	new-item	get-point	pre-rule	post-rule [get-point defaults to true. Also note it is a rule, not a truth state.]
-weak eek whey	roar day drawer	true	true	--	a rule	a rule	a rule
+weak eek whey	roar day drawer	true	true	a thing	a rule	a rule	a rule
 
 Weary Eerie Way Tables ends here.
 
