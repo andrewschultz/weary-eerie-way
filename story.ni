@@ -20,7 +20,11 @@ understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere"
 
 chapter Ump Gray Grump
 
-Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump".
+Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[grump] paces around here, wanting to do something, but too miserable to be properly motivated. Yet."
+
+chapter ire way wire
+
+the ire way wire is scenery in Blimp Limp Bay.
 
 book Roar Day Drawer
 
@@ -80,7 +84,13 @@ book Craze Raise Cay
 
 Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say.
 
+chapter Skull Say Cull
+
 Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull".
+
+chapter Rope Gay Grope
+
+the Rope Gay Grope is a thing. description is "You feel happier just holding the [grope], like you can do ... well, lots of stuff.". printed name is "Rope Gay-Grope".
 
 volume verbs
 
