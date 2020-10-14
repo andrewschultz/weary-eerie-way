@@ -132,9 +132,19 @@ carry out useoning:
 		if noun is u2 entry and second noun is u1 entry:
 			if debug-state is true, say "DEBUG: flip. USE [u2 entry] on [u1 entry].";
 			try useoning u1 entry with u2 entry instead;
+	abide by the useon reject rule;
 	abide by the wide ranging useon rule;
 	say "You don't seem to need to use, um, USE [the noun] on [the second noun].";
 	the rule succeeds.
+
+this is the useon reject rule:
+	repeat through table of useon rejects:
+		if (noun is u1 entry and second noun is u2 entry) or (noun is u2 entry and second noun is u1 entry):
+			if there is a urule entry:
+				abide by the urule entry;
+			else:
+				say "[utext entry][line break]";
+		the rule succeeds;
 
 this is the wide ranging useon rule: [this is for any general rejects to help the player]
 	if second noun is the player, say "You never need to USE anything on yourself." instead;
