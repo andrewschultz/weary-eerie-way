@@ -183,6 +183,12 @@ carry out rming:
 	say "Short room view is now [on-off of opt-short-names] for visited rooms.";
 	the rule succeeds.
 
+volume regular verbs
+
+check attacking:
+`	if noun is ump gray grump, say "Maybe if this were Bump-Ump Bay, that would be appropriate. But no." instead;
+	say "Hit it?! Hey!" instead;
+
 volume meta-verbs
 
 chapter abouting
