@@ -14,9 +14,9 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if always-no]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if always-no]Steer[else]Blimp[end if]".
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break]Passages lead south and east."
 
-understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when always-no.
+understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
 
 chapter Ump Gray Grump
 
@@ -26,16 +26,18 @@ chapter ire way wire
 
 the ire way wire is scenery in Blimp Limp Bay.
 
-book Roar Day Drawer
+book Roar Day Drawer / rdd
 
-rdd is north of Blimp Limp Bay. printed name of rdd is "[if always-no]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if always-no]Crate[else]Drawer[end if]".
+rdd is north of Blimp Limp Bay. printed name of rdd is "[if roar day drawer is moot]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if roar day drawer is moot]Crate[else]Drawer[end if]". "Passages lead south and east[if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
 
 understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as rdd when Roar Day Drawer is moot.
 
-check going south in Roar Day Drawer:
+check going south in rdd:
 	if Id Lay Lid is off-stage:
 		say "You feel a stinging in your back. The drawer spit something at you! A [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful.";
 		now player has Id Lay Lid;
+
+check going east in rdd: if roar day drawer is not moot, say "The [drawer] yells and bocks you." instead;
 
 chapter Roar Day Drawer
 
