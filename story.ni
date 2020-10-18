@@ -32,11 +32,6 @@ rdd is north of Blimp Limp Bay. printed name of rdd is "[if roar day drawer is m
 
 understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as rdd when Roar Day Drawer is moot.
 
-check going south in rdd:
-	if Id Lay Lid is off-stage:
-		say "You feel a stinging in your back. The drawer spit something at you! A [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful.";
-		now player has Id Lay Lid;
-
 check going east in rdd: if roar day drawer is not moot, say "The [drawer] yells and bocks you." instead;
 
 chapter Roar Day Drawer
@@ -51,11 +46,6 @@ book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay.
 
-check going west in Bill Ill Bay:
-	if Weak Eek Whey is off-stage:
-		say "As you go back west, you step in something icky. An open jar of [whey]. It's a bit disgusting, but you don't have to eat it. You take it.";
-		now player has Weak Eek Whey;
-
 chapter Weak Eek Whey
 
 the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite article of Weak Eek Whey is "some".
@@ -63,6 +53,10 @@ the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite articl
 book X Ray Wrecks
 
 X Ray Wrecks is north of Bill Ill Bay. It is east of rdd.
+
+chapter Own Gray Groan
+
+the Own Gray Groan is a thing. "It's sort of ephemeral, but you can USE it if and when you need."
 
 book Sneer Near Say
 
@@ -72,7 +66,7 @@ chapter Lump Say Slump
 
 Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump".
 
-check going north in Sneer Near Say: say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
+check going north in Sneer Near Say: if lump say slump is touchable, say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
 book Stirrer Stay
 
@@ -188,7 +182,7 @@ carry out rming:
 volume regular verbs
 
 check attacking:
-`	if noun is ump gray grump, say "Maybe if this were Bump-Ump Bay, that would be appropriate. But no." instead;
+	if noun is ump gray grump, say "Maybe if this were Bump-Ump Bay, that would be appropriate. But no." instead;
 	say "Hit it?! Hey!" instead;
 
 volume meta-verbs
