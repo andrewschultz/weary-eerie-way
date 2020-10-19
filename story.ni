@@ -14,7 +14,7 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break]Passages lead south and east."
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break]Passages lead north and east."
 
 understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
 
@@ -181,9 +181,18 @@ carry out rming:
 
 volume regular verbs
 
+the block attacking rule is not listed in any rulebook.
+
 check attacking:
 	if noun is ump gray grump, say "Maybe if this were Bump-Ump Bay, that would be appropriate. But no." instead;
 	say "Hit it?! Hey!" instead;
+
+the block saying no rule is not listed in any rulebook.
+the block saying yes rule is not listed in any rulebook.
+
+check saying no: say "Oh, nay!" instead;
+
+check saying yes: say "[']S yay!" instead;
 
 volume meta-verbs
 
