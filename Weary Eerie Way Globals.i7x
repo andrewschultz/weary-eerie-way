@@ -10,10 +10,10 @@ for printing the name of a room (called rm) when opt-short-names is true and sho
 
 volume stubs
 
-to moot (th - a thing): move th to Aced Way.
+to moot (th - a thing): move th to Binnin Way.
 
 definition: a thing (called th) is moot:
-	if th is in Aced Way, yes;
+	if th is in Binnin Way, yes;
 	no;
 
 volume parser stuff

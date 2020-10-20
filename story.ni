@@ -227,4 +227,56 @@ carry out verbsing:
 
 volume out of world
 
-Aced Way is a room. [this is the moot room]
+Binnin Bay is a room. printed name is "Binnin['] Bay". [this is the moot room, formerly Aced Way]
+
+volume old school verb carnage
+
+understand the command "ask" as something new.
+understand the command "attach" as something new.
+understand the command "buy" as something new.
+understand the command "chop" as something new.
+understand the command "crack" as something new.
+understand the command "embrace" as something new.
+understand the command "fight" as something new.
+understand the command "give" as something new.
+understand the command "give" as something new.
+understand the command "hold" as something new.
+understand the command "hop" as something new.
+understand the command "hug" as something new.
+understand the command "insert" as something new.
+understand the command "jump" as something new.
+understand the command "kill" as something new.
+understand the command "light" as something new.
+understand the command "move" as something new.
+understand the command "murder" as something new.
+understand the command "pay" as something new.
+understand the command "polish" as something new.
+understand the command "prune" as something new.
+understand the command "pull" as something new.
+understand the command "punch" as something new.
+understand the command "purchase" as something new.
+understand the command "push" as something new.
+understand the command "put" as something new.
+understand the command "say" as something new.
+understand the command "scrub" as something new.
+understand the command "shine" as something new.
+understand the command "show" as something new.
+understand the command "sip" as something new.
+understand the command "skip" as something new.
+understand the command "slice" as something new.
+understand the command "sorry" as something new.
+understand the command "stand" as something new.
+understand the command "swallow" as something new.
+understand the command "sweep" as something new.
+understand the command "taste" as something new.
+understand the command "tell" as something new.
+understand the command "tell" as something new.
+understand the command "thump" as something new.
+understand the command "tie" as something new.
+understand the command "torture" as something new.
+understand the command "touch" as something new.
+understand the command "turn" as something new.
+understand the command "wave" as something new.
+understand the command "wipe" as something new.
+understand the command "wreck" as something new.
+
