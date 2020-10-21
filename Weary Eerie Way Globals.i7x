@@ -8,12 +8,25 @@ a room has text called shorttext.
 
 for printing the name of a room (called rm) when opt-short-names is true and shorttext of rm is not empty and rm is visited: say "[shorttext of the item described]".
 
+volume room stuff
+
+definition: a direction (called d) is viable:
+	if the room d of location of player is nowhere, no;
+	yes;
+
+to say psgs: say "[if number of viable directions is 0]There aren't any passages out. There should be, but there aren't[else if number of viable directions is 1]You can only go [random viable direction][else]Passages lead [list of viable directions][end if]"
+
+check going nowhere:
+	say "You can only go [list of viable directions]." instead;
+
+the description of a room is usually "[psgs]."
+
 volume stubs
 
-to moot (th - a thing): move th to Binnin Way.
+to moot (th - a thing): move th to Binnin Bay.
 
 definition: a thing (called th) is moot:
-	if th is in Binnin Way, yes;
+	if th is in Binnin Bay, yes;
 	no;
 
 volume parser stuff
