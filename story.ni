@@ -1,5 +1,15 @@
 "Weary Eerie Way" by Andrew Schultz
 
+volume metadata
+
+the story headline is "A text adventure from OkayCo. New? Ooh, Nay".
+
+the story description is "An ol' stray stroll".
+
+release along with a website.
+
+release along with an interpreter.
+
 volume includes
 
 include Trivial Niceties by Andrew Schultz.
