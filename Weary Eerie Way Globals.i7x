@@ -21,6 +21,8 @@ check going nowhere:
 
 the description of a room is usually "[psgs]."
 
+a room can be westish. a room can be southish.
+
 volume stubs
 
 to moot (th - a thing): move th to Binnin Bay.

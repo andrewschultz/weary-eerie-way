@@ -10,6 +10,8 @@ definition: a direction (called d) is retreatish:
 
 check going when noun is retreatish:
 	if the room noun of location of player is nowhere, continue the action; [wrong way = wrong way]
+	if noun is west, now location of player is westish;
+	if noun is south, now location of player is southish;
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
 			if myitm entry is off-stage, continue the action;
