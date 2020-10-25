@@ -58,6 +58,10 @@ book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay.
 
+The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". printed name is "Not-Say Snot".
+
+check going north in Bill Ill Bay: if Not Say Snot is touchable, say "The [snot] wags its finger. It looks north and shudders as if to say, it's too scary to go that way. It makes an arm motion to bar you going north. It gestures to you as if to say it's doing all this FOR YOU." instead;
+
 chapter Weak Eek Whey
 
 the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite article of Weak Eek Whey is "some".

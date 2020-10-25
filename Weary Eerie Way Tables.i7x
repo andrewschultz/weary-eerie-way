@@ -45,10 +45,14 @@ u1	u2	v1	v2	new-item	get-point	pre-rule	post-rule [get-point defaults to true. A
 weak eek whey	roar day drawer	true	true	a thing	a rule	a rule	use-whey-drawer rule
 rope gay grope	ump gray grump	true	true	--	--	use-grope-grump rule
 own gray groan	Skull Say Cull	true	true	--	--	use-groan-skill rule
+Id Lay Lid	Not Say Snot	true	true	--	--	use-lid-snot rule
 
 section pre rules
 
 section post rules
+
+this is the use-lid-snot rule:
+	say "The Id from the [lid] seeps out into a cloudy gas overwhelms the [snot]. Who remains snotty, but intones 'Be that way, then. I can't stop you.'";
 
 this is the use-groan-skill rule:
 	say "As the skull continues to jabber away, you start groaning louder. Your groaning seems to wear it down. It bangs its head on the ground, forgetting that it is just a head. As a result, it collapses and rolls away, unconscious. Go, you!"
