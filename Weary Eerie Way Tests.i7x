@@ -4,7 +4,7 @@ Version 1/201020 of Weary Eerie Way Tests by Andrew Schultz begins here.
 
 volume automation
 
-test w with "e/w/n/use whey on drawer/s/e/use lid on snot/n/w/e/s/n/e/w/n/use skill on slug/s/e/use scram on slump"
+test w with "e/w/n/use whey on drawer/s/e/use lid on snot/n/w/e/s/n/e/w/n/use scram on slug/s/e/use skill on slump"
 
 Weary Eerie Way Tests ends here.
 
