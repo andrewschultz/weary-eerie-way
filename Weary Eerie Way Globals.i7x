@@ -43,6 +43,9 @@ chapter definitions
 to decide whether always-no: decide no.
 to decide whether always-yes: decide yes.
 
+to decide which number is cull-score:
+	decide on (boolval of whether or not player has Steel) + (boolval of whether or not player has Shard);
+
 chapter options
 
 opt-short-names is a truth state that varies.

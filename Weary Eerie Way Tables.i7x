@@ -14,7 +14,7 @@ check going when noun is retreatish:
 	if noun is south, now location of player is southed;
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
-			if myitm entry is not off-stage, continue the action;
+			if myitm entry is not off-stage, next;
 			if there is a myrule entry:
 				process the myrule entry;
 				unless the rule succeeded, continue the action;
