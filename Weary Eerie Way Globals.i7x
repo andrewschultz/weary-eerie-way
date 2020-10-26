@@ -21,7 +21,10 @@ check going nowhere:
 
 the description of a room is usually "[psgs]."
 
-a room can be wested. a room can be southed.
+a room can be wested.
+a room can be southed.
+a room can be easted.
+a room can be northed.
 
 volume stubs
 
