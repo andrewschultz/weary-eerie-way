@@ -10,8 +10,8 @@ definition: a direction (called d) is retreatish:
 
 check going when noun is retreatish:
 	if the room noun of location of player is nowhere, continue the action; [wrong way = wrong way]
-	if noun is west, now location of player is westish;
-	if noun is south, now location of player is southish;
+	if noun is west, now location of player is wested;
+	if noun is south, now location of player is southed;
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
 			if myitm entry is not off-stage, continue the action;
@@ -28,6 +28,8 @@ myrm	myrule	myitm	mytxt
 rdd	a rule	Id Lay Lid	"You feel a stinging in your back. The drawer spit something at you! An [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful."
 Bill Ill Bay	--	Weak Eek Whey	"As you go back west, you step in something icky. An open jar of [whey]. It's a bit disgusting, but you don't have to eat it. You take it."
 X Ray Wrecks	wrecks-flee rule	Own Gray Groan	"You suddenly feel a bit futile. You hear a [groan] and involuntarily copy it. For a minute or two, you can do nothing else. Then it goes away. Maybe the ability to groan will be useful sometime soon."
+Stirrer Stay	--	Kill Say Skill	"As you flee, you suddenly remember ... things, and ... stuff. About how to evade negativity. About ways to shut up people ho babble on too long. You remember ways people shut you up, for better or for worse, and you crystallize some critical ideas about how to deaden 'exciting' conversations that got nasty.[paragraph break]Indeed, you now possess [skill]."
+Sneer Near Say	--	Cram Say Scram	"As you flee, you are overwhelmed with visions and recollections of people telling you not to bother to come back. Some are just hurtful, but some are pointed and could be used on someone who SHOULD be ostracized. You take a minute to distill the best of them.[paragraph break]You make a name for your self-research on the matter. You call it [scram]."
 
 section going rules
 

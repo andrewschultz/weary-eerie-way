@@ -92,13 +92,21 @@ Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump".
 
 check going north in Sneer Near Say: if lump say slump is touchable, say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
+chapter Cram Say Scram
+
+the Cram Say Scram is a thing. "It isn't something physical,but rather knowledge, of choice words and emphases to help chase someone you don't want around without being violent."
+
 book Stirrer Stay
 
 Stirrer Stay is north of X Ray Wrecks.
 
 Lug Say Slug is a person in Stirrer Stay.
 
-check going east in Stirrer Stay: say "Not with [lug] around." instead;
+check going east in Stirrer Stay: say "Not with [lug] around. It's pretty violent!" instead;
+
+chapter Kill Say Skill
+
+the Kill Say Skill is a thing. "You can't really see it. It's in your mind. It seems good for stopping conversations cold."
 
 book Craze Raise Cay
 
