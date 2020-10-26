@@ -68,7 +68,15 @@ the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite articl
 
 book X Ray Wrecks
 
+check going to X Ray Wrecks:
+	if Drawer is not moot or Snot is not moot, say "You feel impeded by some unnatural force. Perhaps there is more to do." instead;
+
 X Ray Wrecks is north of Bill Ill Bay. It is east of rdd. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
+
+check going in X Ray Wrecks:
+	if noun is north or noun is east:
+		if X Ray Wrecks is not wested and X Ray Wrecks is not southed:
+			say "Weird. You don't see any reason you can't go that way. But you can't." instead;
 
 chapter Own Gray Groan
 
