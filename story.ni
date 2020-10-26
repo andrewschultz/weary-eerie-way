@@ -22,6 +22,10 @@ include Weary Eerie Way Globals by Andrew Schultz.
 
 include Weary Eerie Way Tables by Andrew Schultz.
 
+section testing include - not for release
+
+include Weary Eerie Way Tests by Andrew Schultz.
+
 volume rooms
 
 book Blimp Limp Bay
@@ -172,7 +176,7 @@ this is the useon reject rule:
 				abide by the urule entry;
 			else:
 				say "[utext entry][line break]";
-		the rule succeeds;
+			the rule succeeds;
 
 this is the wide ranging useon rule: [this is for any general rejects to help the player]
 	if second noun is the player, say "You never need to USE anything on yourself." instead;
@@ -194,7 +198,7 @@ understand "u [text] on [thing]" as justusing (with nouns reversed).
 understand "use [thing] on [text]" as justusing.
 understand "use [text] on [thing]" as justusing (with nouns reversed).
 
-carry out justusing: say "I couldn't figure what you wanted to use [the noun] with.";
+carry out justusing: say "I couldn't figure what you wanted to use [if noun is a person]on [the noun][else][the noun] with[end if].";
 
 volume options
 
@@ -257,10 +261,6 @@ carry out verbsing:
 	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
 	the rule succeeds;
 
-volume out of world
-
-Binnin Bay is a room. printed name is "Binnin['] Bay". [this is the moot room, formerly Aced Way]
-
 volume old school verb carnage
 
 understand the command "ask" as something new.
@@ -312,3 +312,6 @@ understand the command "wave" as something new.
 understand the command "wipe" as something new.
 understand the command "wreck" as something new.
 
+volume out of world
+
+Binnin Bay is a room. printed name is "Binnin['] Bay". [this is the moot room, formerly Aced Way]
