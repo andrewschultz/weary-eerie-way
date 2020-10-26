@@ -44,7 +44,7 @@ the ire way wire is scenery in Blimp Limp Bay.
 
 book Roar Day Drawer / rdd
 
-rdd is north of Blimp Limp Bay. printed name of rdd is "[if roar day drawer is moot]Ate Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if roar day drawer is moot]Crate[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
+rdd is north of Blimp Limp Bay. printed name of rdd is "[if roar day drawer is moot]Ate-Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if roar day drawer is moot]Crate[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
 
 understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as rdd when Roar Day Drawer is moot.
 
@@ -60,7 +60,7 @@ the Id Lay Lid is a thing. printed name is "Id-Lay Lid".
 
 book Bill Ill Bay
 
-Bill Ill Bay is east of Blimp Limp Bay.
+Bill Ill Bay is east of Blimp Limp Bay. printed name is "Bill-Ill Bay".
 
 The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". printed name is "Not-Say Snot".
 
@@ -84,11 +84,11 @@ check going in X Ray Wrecks:
 
 chapter Own Gray Groan
 
-the Own Gray Groan is a thing. "It's sort of ephemeral, but you can USE it if and when you need."
+the Own Gray Groan is a thing. "It's sort of ephemeral, but you can USE it if and when you need. It's a friendly groan, so much so it could almost get you to say 'Own Gray?! Grown.'". printed name is "Own-Gray Groan".
 
 book Sneer Near Say
 
-Sneer Near Say is east of X Ray Wrecks.
+Sneer Near Say is east of X Ray Wrecks. printed name is "Sneer Near, Say".
 
 chapter Lump Say Slump
 
@@ -106,7 +106,7 @@ Stirrer Stay is north of X Ray Wrecks.
 
 Lug Say Slug is a person in Stirrer Stay.
 
-check going east in Stirrer Stay: say "Not with [lug] around. It's pretty violent!" instead;
+check going east in Stirrer Stay: if lug say slug is touchable, say "Not with [lug] around. It's pretty violent!" instead;
 
 chapter Kill Say Skill
 
@@ -114,11 +114,21 @@ the Kill Say Skill is a thing. "You can't really see it. It's in your mind. It s
 
 book Craze Raise Cay
 
-Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say.
+Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say. printed name is "Craze-Raise Cay".
+
+check going to Craze Raise Cay: if Slug is not moot or Slump is not moot, say "You feel a sense of dread. You're not ready yet." instead;
 
 chapter Skull Say Cull
 
-Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull".
+Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull". "[skull] wavers back and forth here, being generally scary and threatening and demoralizing. Your nemesis! How to defeat it?"
+
+chapter Eel Stay Steel
+
+the Eel Stay Steel is a thing. printed name is "[']E'll-Stay Steel". "A sword, really. Just squeezing it and looking at it gives you extra courage to hold your ground.". indefinite article of Steel is "an".
+
+chapter Hard Say Shard
+
+the Hard Say Shard is a thing. printed name is "Hard-Say Shard". "A shield, really, and it's all spiky too, but unlike in Ultima V, you don't have to hit extra keystrokes if you want to attack with it.[paragraph break]On the other hand, unlike in Ultima V, there's not much plot or challenge here, so -- trade-offs."
 
 chapter Rope Gay Grope
 
