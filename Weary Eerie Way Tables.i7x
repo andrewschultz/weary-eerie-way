@@ -14,18 +14,19 @@ check going when noun is retreatish:
 	if noun is south, now location of player is southish;
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
-			if myitm entry is off-stage, continue the action;
+			if myitm entry is not off-stage, continue the action;
 			if there is a myrule entry:
 				process the myrule entry;
-				unless the rule succeeded, the rule succeeds;
-				if there is a mytxt entry:
-					say "[mytxt entry][line break]";
-				now player has myitm entry;
+				unless the rule succeeded, continue the action;
+			[say "[myrm entry] [myitm entry] [location of myitm entry].";]
+			if there is a mytxt entry:
+				say "[mytxt entry][line break]";
+			now player has myitm entry;
 
 table of dirdrops
 myrm	myrule	myitm	mytxt
-rdd	a rule	Id Lay Lid	"You feel a stinging in your back. The drawer spit something at you! A [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful."
-Bill Ill Bay	--	Weak Eek Whey
+rdd	a rule	Id Lay Lid	"You feel a stinging in your back. The drawer spit something at you! An [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful."
+Bill Ill Bay	--	Weak Eek Whey	"As you go back west, you step in something icky. An open jar of [whey]. It's a bit disgusting, but you don't have to eat it. You take it."
 X Ray Wrecks	wrecks-flee rule	Own Gray Groan	"You suddenly feel a bit futile. You hear a [groan] and involuntarily copy it. For a minute or two, you can do nothing else. Then it goes away. Maybe the ability to groan will be useful sometime soon."
 
 section going rules
