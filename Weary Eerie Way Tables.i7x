@@ -31,7 +31,7 @@ Bill Ill Bay	--	Weak Eek Whey	"As you go back west, you step in something icky. 
 X Ray Wrecks	wrecks-flee rule	Own Gray Groan	"You suddenly feel a bit futile. You hear a [groan] and involuntarily copy it. For a minute or two, you can do nothing else. Then it goes away. Maybe the ability to groan will be useful sometime soon."
 Stirrer Stay	--	Kill Say Skill	"As you flee, you suddenly remember ... things, and ... stuff. About how to evade negativity. About ways to shut up people ho babble on too long. You remember ways people shut you up, for better or for worse, and you crystallize some critical ideas about how to deaden 'exciting' conversations that got nasty.[paragraph break]Indeed, you now possess [skill]."
 Sneer Near Say	--	Cram Say Scram	"As you flee, you are overwhelmed with visions and recollections of people telling you not to bother to come back. Some are just hurtful, but some are pointed and could be used on someone who SHOULD be ostracized. You take a minute to distill the best of them.[paragraph break]You make a name for your self-research on the matter. You call it [scram]."
-Craze Raise Cay	--	Eel Stay Steel	"You trip over what appears to be a metal spole. Wait, it's sort of sharp. It's a sword! It makes you feel confident you can hang around for a bit. Etched on the blade is the phrase ... [steel]."
+Craze Raise Cay	--	Eel Stay Steel	"You trip over what appears to be a metal pole. Wait, it's sort of sharp. It's a sword! It makes you feel confident you can hang around for a bit. Etched on the blade is the phrase ... [steel]."
 Craze Raise Cay	--	Hard Say Shard	"Your [steel] clanks at your side, swinging out and ... catching on something that makes you trip. It's a protrusion of metal, roughly round-shaped. Wait! It's a sort of shield! It's not the shape you expect from shields, but it should protect you."
 
 section going rules
@@ -76,7 +76,7 @@ this is the use-whey-drawer rule:
 	say "You schlop the whey at the drawer. It sticks! And the drawer slowly quiets down. It's a bit embarrassed by all this, and it picks up its legs and moves away.[paragraph break]It's no longer blocking the way east."
 
 this is the use-grope-grump rule:
-	say "As you hand the [grope] to [grump], [grump] mutters 'Grope ... [']ope ... gray...' but looks less sad, if still very gray. Several long, melodramatic sighs later, [grump] starts in fixiing the blimp. And it goes pretty fast. The [rope] and [wire] spark as they tie together. The blimp begins chugging. It works! You enter and soar back off to ... well, I can't tell you, because you wake up before the good part. Dreams are always like that.";
+	say "As you hand the [grope] to [grump], [grump] mutters 'Grope ... [']ope ... gray...' but looks less sad, if still very gray. Several long, melodramatic sighs later, [grump] starts in fixing the blimp. And it goes pretty fast. The [rope] and [wire] spark as they tie together. The blimp begins chugging. It works! You enter and soar back off to ... well, I can't tell you, because you wake up before the good part. Dreams are always like that.[paragraph break]But worse, you thought you learned Something About Life on the way. You would apply these lessons -- how you got past the very worst nuisances -- to write a REAL self-help book, one that could help people who needed it just get by. But it all sort of slipped out when you woke up.[paragraph break]The main points serve you well over the years, though. You're even able to dish out decent advice more than you expect. So it's not too bad at all.";
 	end the story saying "Winnin['] Way!";
 
 this is the use-scram-slug rule:
@@ -113,7 +113,8 @@ after going when skull is moot:
 		repeat through table of dirchecks:
 			if cur-dirs is dirs-gone entry:
 				say "[dirs-result entry][line break]";
-				the rule succeeds;
+				continue the action;
+	continue the action;
 
 table of dirchecks
 dirs-gone	dirs-result
