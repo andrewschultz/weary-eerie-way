@@ -26,6 +26,10 @@ section testing include - not for release
 
 include Weary Eerie Way Tests by Andrew Schultz.
 
+volume when play begins/ends
+
+when play begins: say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched it up with your skill set, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'You're in the right place,' a gruff voice intones. 'I can fix that here in Blimp-Limp Bay. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you have a piece to fix the blimp. It needs to help make me happy enough to work. Hey, don't judge me back.'"
+
 volume rooms
 
 book Blimp Limp Bay
