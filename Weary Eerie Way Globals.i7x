@@ -14,10 +14,22 @@ definition: a direction (called d) is viable:
 	if the room d of location of player is nowhere, no;
 	yes;
 
-to say psgs: say "[if number of viable directions is 0]There aren't any passages out. There should be, but there aren't[else if number of viable directions is 1]You can only go [random viable direction][else]Passages lead [list of viable directions][end if]"
+to say psgs:
+	say "[if number of viable directions is 0]There aren't any passages out. There should be, but there aren't[else if number of viable directions is 1]You can only go [dir-room-list][else]Passages lead [dir-room-list][end if]"
+
+to say dir-room-list:
+	now show-rooms is true;
+	say "[list of viable directions]";
+	now show-rooms is false;
+
+show-rooms is a truth state that varies.
+
+after printing the name of a direction (called d) when show-rooms is true:
+	if the room d of location of player is visited, say " to [the room d of location of player]"
 
 check going nowhere:
-	say "You can only go [list of viable directions]." instead;
+	if noun is not cardinal, say "Only the cardinal directions (north, south, east and west) are used in [this-game]." instead;
+	say "You can't go [noun]. You can only go [dir-room-list]." instead;
 
 the description of a room is usually "[psgs]."
 
@@ -38,6 +50,14 @@ volume parser stuff
 
 rule for printing a parser error when the latest parser error is the not a verb i recognise error:
 	say "I didn't recognize that. [this-game] does not have an extensive verb list. You can see it with [b]VERBS[r] or [b]V[r].";
+
+volume rules
+
+procedural rule: ignore the print final score rule.
+
+volume global variables
+
+the maximum score is 6.
 
 volume definitions and options
 
