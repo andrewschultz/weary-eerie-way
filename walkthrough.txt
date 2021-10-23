@@ -1,0 +1,119 @@
+This walkthrough is a bit short on detail due to time constraints. You need to use items together, which creates another item--but you won't find it until you backtrack.
+
+At the end, you have to run through all valid connectors between each room, each way. There are 16 such moves, and there is an Eulerian path through (touch them all with no backtracking).
+
+>E
+
+>W
+
+Ooh! you got something. where to use it?
+
+>N
+
+>USE WHEY ON DRAWER
+
+>S
+
+>E
+
+>USE LID ON SNOT
+
+>N
+
+>W
+
+>E
+
+>S
+
+>N
+
+>E
+
+>W
+
+>N
+
+>USE SCRAM ON SLUG
+
+>S
+
+>E
+
+>USE SKILL ON SLUMP
+
+>N
+
+>S
+
+>W
+
+>W
+
+>E
+
+>S
+
+>N
+
+>N
+
+>E
+
+>S
+
+>N
+
+>W
+
+>E
+
+>USE GROAN ON SKULL
+
+Now to loop through. Note we can go over each connection one way, then retrace our steps.
+
+>W
+
+>S
+
+>S
+
+>W
+
+>N
+
+>E
+
+>E
+
+>N
+
+Now to backpedal.
+
+>S
+
+>W
+
+>W
+
+>S
+
+>E
+
+>N
+
+>N
+
+>E
+
+Now we have what we need for Ump-Gray-Grump.
+
+>W
+
+>S
+
+>S
+
+>W
+
+>USE ROPE ON GRUMP
