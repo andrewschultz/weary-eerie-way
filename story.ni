@@ -2,9 +2,14 @@
 
 volume metadata
 
-the story headline is "An EctoComp 2020 game.".
+Include (-
 
-the story description is "An ol' stray stroll".
+#Undef Headline;
+Constant Headline = "An ol' stray stroll";
+
+-) after "Language.i6t".
+
+the story description is "An EctoComp 2021 entry and brief sequel to Under They Thunder (IFComp 2020)".
 
 release along with a website.
 
@@ -41,13 +46,13 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer 'Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs]."
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs]."
 
 understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
 
 chapter Ump Gray Grump
 
-Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[grump] paces around here, wanting to do something, but too miserable to be properly motivated. Yet."
+Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[if player has rope][grump] seems almost happy, unable to turn away from [the rope] you found[else][grump] paces around here, too miserable to be properly motivated or even talk. Yet[end if]."
 
 chapter ire way wire
 
@@ -264,7 +269,7 @@ understand "about" as abouting.
 understand "credits" as abouting.
 
 carry out abouting:
-	say "This was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. After realizing UTT was a bit too complex, I sat down and wondered how I'd do things more simply. And this popped out. I would like to thank my testers from UTT and all who played it.[paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman and Ruber Eaglenest for continuing to run it, and itch.io for hosting the comp.";
+	say "This is is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was October 30 and not October 31.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He heas an entry in the Petite Mort too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting the comp.";
 	the rule succeeds;
 
 chapter verbsing
