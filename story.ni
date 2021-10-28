@@ -269,7 +269,7 @@ understand "about" as abouting.
 understand "credits" as abouting.
 
 carry out abouting:
-	say "This is is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was October 30 and not October 31.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He heas an entry in the Petite Mort too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting the comp.";
+	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
 	the rule succeeds;
 
 chapter verbsing
@@ -285,8 +285,8 @@ understand "v" as verbsing.
 carry out verbsing:
 	say "Here are all the commands you need to win the game:[paragraph break]";
 	say "--[b]N, S, E, W[r], the four compass directions.";
-	say "--[b]U[r] (or [b]USE[r]) (item) on (another). You can also just [b]U[r] an item, and I will try to guess what to use it on.";
-	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
+	say "--[b]U[r] (or [b]USE[r]) (item) on (another). You don't need the full name -- just one word.";
+	[say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";]
 	the rule succeeds;
 
 volume old school verb carnage
