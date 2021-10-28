@@ -13,7 +13,7 @@ the story description is "An EctoComp 2021 entry and brief sequel to Under They 
 
 release along with a website.
 
-release along with an interpreter.
+release along with the "Parchment" interpreter.
 
 use American dialect.
 
@@ -277,13 +277,15 @@ chapter verbsing
 verbsing is an action applying to nothing.
 
 understand the command "verbs" as something new.
+understand the command "v" as something new.
 
 understand "verbs" as verbsing.
+understand "v" as verbsing.
 
 carry out verbsing:
 	say "Here are all the commands you need to win the game:[paragraph break]";
 	say "--[b]N, S, E, W[r], the four compass directions.";
-	say "--[b]U[r] (or [b]USE[r] (item) on (another). You can also just [b]U[r] an item, and I will try to guess what to use it on.";
+	say "--[b]U[r] (or [b]USE[r]) (item) on (another). You can also just [b]U[r] an item, and I will try to guess what to use it on.";
 	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
 	the rule succeeds;
 
