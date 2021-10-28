@@ -10,8 +10,9 @@ definition: a direction (called d) is retreatish:
 
 check going when noun is retreatish:
 	if the room noun of location of player is nowhere, continue the action; [wrong way = wrong way]
-	if noun is west, now location of player is wested;
-	if noun is south, now location of player is southed;
+	if skull is not moot:
+		if noun is west, now location of player is wested;
+		if noun is south, now location of player is southed;
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
 			if myitm entry is not off-stage, next;
@@ -83,7 +84,7 @@ this is the use-scram-slug rule:
 	say "The [slug] isn't used to being talked to that way. It's bigger than you! But you seem serious. And you don't back down. Its threats to hurt you get more repetitive, but it seems to get bored of them. Eventually, confused, it shuffles off."
 
 this is the use-skill-slump rule:
-	say "The [skill] helps you counter each of the [slump]'s protestations against, well, doing anything at all. Suddenly it finds a new thing to give up on: trying to convince you! It shuffles off in search of more gullible prey to lull into inaction. You briefly wonder what you have done to people, and if they deserve it. But hey, you're that much freer now."
+	say "The [skill] helps you counter each of the [slump]'s protestations against, well, doing anything at all. Suddenly it finds a new thing to give up on: trying to convince you! It shuffles off in search of more gullible prey to lull into inaction. You briefly wonder what you have done to those people, and if they deserve it. But hey, you're that much freer now."
 
 chapter useon rejects
 
