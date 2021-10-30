@@ -13,6 +13,8 @@ the story description is "An EctoComp 2021 entry and brief sequel to Under They 
 
 release along with a website.
 
+release along with cover art.
+
 release along with the "Parchment" interpreter.
 
 use American dialect.
@@ -269,7 +271,7 @@ understand "about" as abouting.
 understand "credits" as abouting.
 
 carry out abouting:
-	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]And thanks to svgrepo.com for the blimp SVG for the cover art.";
 	the rule succeeds;
 
 chapter verbsing
