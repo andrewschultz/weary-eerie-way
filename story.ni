@@ -17,6 +17,8 @@ release along with cover art.
 
 release along with the "Parchment" interpreter.
 
+the release number is 2.
+
 use American dialect.
 
 volume includes
@@ -272,6 +274,21 @@ understand "credits" as abouting.
 
 carry out abouting:
 	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]And thanks to svgrepo.com for the blimp SVG for the cover art.";
+	the rule succeeds;
+
+
+chapter hinting
+
+hinting is an action out of world.
+
+understand the command "hint" as something new.
+understand the command "help" as something new.
+
+understand "hint" as hinting.
+understand "help" as hinting.
+
+carry out hinting:
+	say "The hint-int-hey hint system is a state-of-the-art engine using AI methods to specifically track your route via artificial intelligence algorithms to provide just the right level of hints up to and including and absolute solution based on[paragraph break]        	[b]Programming error 1031: [slurp] has, like, caused stuff to crash in general *[r][paragraph break]No fair! But then again, what would you expect? To be able to control your dreams, so you could sit back in a computer chair, find a file called walkthrough.txt in a zip file, and see where you are stuck? Sorry, this isn't one of those dreams.[paragraph break]Or is it?";
 	the rule succeeds;
 
 chapter verbsing
