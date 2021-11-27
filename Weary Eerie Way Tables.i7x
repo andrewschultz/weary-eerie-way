@@ -59,7 +59,7 @@ Own Gray Groan	Skull Say Cull	true	true	--	--	pre-groan-cull rule	use-groan-skul
 section pre rules
 
 this is the pre-groan-cull rule:
-	if steel is moot or shard is moot:
+	if steel is off-stage or shard is off-stage:
 		say "You feel mentally, but not [if cull-score is 0]close to[else]quite[end if] physically equipped to deal with the [skull].";
 		the rule fails;
 
@@ -69,7 +69,7 @@ this is the use-lid-snot rule:
 	say "The Id from the [lid] seeps out into a cloudy gas overwhelms the [snot]. Who remains snotty, but intones 'Be that way, then. I can't stop you.'";
 
 this is the use-groan-skull rule:
-	say "You focus the [groan] on the [skull]. A light emanates from above the [groan] to the [skull] and back up to the heavens.[paragraph break]As the skull begins to jabber away defensively, you start groaning louder. Your groaning seems to wear it down. It bangs its head on the ground, forgetting that it is just a head. As a result, it collapses and rolls away, unconscious. Go, you! Away from sight, there is a humming, then shattering. The [skull] is in pieces![paragraph break]You expect some great reward, but there is none. What is up with that?";
+	say "You focus the [groan] on the [skull]. A light emanates from above the [groan] to the [skull] and back up to the heavens.[paragraph break]As the skull begins to jabber away defensively, you start groaning louder. The skull is upset! It was groaning first! It rushes at you! Your [steel] vaporizes as the [skull] bashes you. It rolls back but then rolls forward as you draw your [shard].[paragraph break]Again, your [shard] vaporizes, but this time, you see a crack in the [skull]. It freezes momentarily. It can't move. Well, it bangs its head on the ground, forgetting that it is just a head. Very shortly, it shatters into many pieces, which themselves dissolve in the air. Go, you![paragraph break]Sadly, there's no treasure or anything where the [skull] used to be.";
 	now all rooms are not wested;
 	now all rooms are not southed;
 

@@ -144,11 +144,11 @@ Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull".
 
 chapter Eel Stay Steel
 
-the Eel Stay Steel is a thing. printed name is "[']E'll-Stay Steel". "A sword, really. Just squeezing it and looking at it gives you extra courage to hold your ground.". indefinite article of Steel is "an".
+the Eel Stay Steel is a thing. printed name is "[']E'll-Stay Steel". description is "A sword, really. Just squeezing it and looking at it gives you extra courage to hold your ground.[paragraph break]But what color is it, you ask?[paragraph break]... puts on shades ...[paragraph break]Teal, of course!". indefinite article of Steel is "an".
 
 chapter Hard Say Shard
 
-the Hard Say Shard is a thing. printed name is "Hard-Say Shard". "A shield, really, and it's all spiky too, but unlike in Ultima V, you don't have to hit extra keystrokes if you want to attack with it.[paragraph break]On the other hand, unlike in Ultima V, there's not much plot or challenge here, so -- trade-offs."
+the Hard Say Shard is a thing. printed name is "Hard-Say Shard". description is "A shield, really, and it's all spiky too, but unlike in Ultima V, you don't have to hit extra keystrokes if you want to attack with it.[paragraph break]On the other hand, unlike in Ultima V, there's not much plot or challenge here, so -- trade-offs."
 
 chapter Rope Gay Grope
 
