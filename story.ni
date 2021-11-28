@@ -307,7 +307,7 @@ every turn:
 	repeat with X running through unremarked carried things:
 		decrement remark-count of X;
 		if remark-count of X is 0:
-			say "A voice coldly states [i]YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE [printed name of X in upper case]. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...[r]";
+			say "A voice coldly states [i]YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU PPOOOSSSEEEEESSSS THHE [printed name of X in upper case]. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...[r]";
 			now X is remarked;
 
 check useoning it with:
