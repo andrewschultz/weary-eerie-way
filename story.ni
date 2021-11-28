@@ -52,7 +52,11 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs].".
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [random umpy thing in blimp limp bay][end if].".
+
+definition: a thing (called th) is umpy:
+	if th is ump hay hump, yes;
+	no;
 
 the player is in Blimp Limp Bay.
 
@@ -65,6 +69,18 @@ Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". 
 chapter ire way wire
 
 the ire way wire is scenery in Blimp Limp Bay.
+
+chapter changing scenery
+
+after looking in Blimp Limp Bay:
+	if Ump Gray Grump is in Blimp Limp Bay and number of carried things > 0:
+		say "'Sheesh! What am I supposed to do with [i]THAT[r]?' moans [Grump], noticing [the random thing carried by the player] you just picked up. 'Of all the useless...'[paragraph break]Suddenly [Grump] falls down and seems to be almost sucked into the ground. You're not sure if [Grump] actually changes or is covered up quickly. But now where [grump] was, is a pile of hay. An [hump], if you will.";
+		moot ump gray grump;
+		move ump hay hump to blimp limp bay;
+		say "[line break]Well, maybe if you're [i]very[r] lucky, you'll be hit with enough items that turn out to be oddly useful enough to get out of here. Weirder things have happened. Like ending up here in the first place.";
+	continue the action;
+
+an ump hay hump is scenery in blimp limp bay. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
 
 book Roar Day Drawer / rdd
 
@@ -274,7 +290,7 @@ check useoning it with:
 
 volume regular verbs
 
-chapter verbs
+chapter attacking
 
 the block attacking rule is not listed in any rulebook.
 
@@ -295,6 +311,11 @@ check eating:
 	if noun is a person, say "Ick! Say, sick!" instead;
 	if noun is Weak Eek Whey, say "That's plain and inedible." instead;
 	say "Nothing here is worth eating, even if it were cooked in Leet-Eat Ley." instead;
+
+chapter inventory
+
+check taking inventory:
+	now all carried things are remarked;
 
 chapter listening
 
