@@ -92,7 +92,7 @@ check going north in Bill Ill Bay: if Not Say Snot is touchable, say "The [snot]
 
 chapter Weak Eek Whey
 
-the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite article of Weak Eek Whey is "some".
+the Weak Eek Whey is a thing. printed name is "Weak-Eek Whey". indefinite article of Weak Eek Whey is "some". description is "Just looking at it makes you worry you will lose your voice."
 
 book X Ray Wrecks
 
@@ -108,7 +108,7 @@ check going in X Ray Wrecks:
 
 chapter Own Gray Groan
 
-the Own Gray Groan is a thing. "It's sort of ephemeral, but you can USE it if and when you need. It's a friendly groan, so much so it could almost get you to say 'Own Gray?! Grown.'". printed name is "Own-Gray Groan".
+the Own Gray Groan is a thing. description is "It's sort of ephemeral, but you can USE it if and when you need. It's a friendly groan, so much so it could almost get you to say 'Own Gray?! Grown.'". printed name is "Own-Gray Groan".
 
 book Sneer Near Say
 
@@ -122,7 +122,7 @@ check going north in Sneer Near Say: if lump say slump is touchable, say "[slump
 
 chapter Cram Say Scram
 
-the Cram Say Scram is a thing. "It isn't something physical,but rather knowledge, of choice words and emphases to help chase someone you don't want around without being violent."
+Cram Say Scram is a proper-named thing. printed name is "Cram-Say-Scram". description is "It isn't something physical,but rather knowledge, of choice words and emphases to help chase someone you don't want around without being violent."
 
 book Stirrer Stay
 
@@ -134,7 +134,7 @@ check going east in Stirrer Stay: if lug say slug is touchable, say "Not with [l
 
 chapter Kill Say Skill
 
-the Kill Say Skill is a thing. "You can't really see it. It's in your mind. It seems good for stopping conversations cold."
+Kill Say Skill is a proper-named thing. printed name is "Kill-Say Skill". description is "You can't really see it. It's in your mind. It seems good for stopping conversations cold."
 
 book Craze Raise Cay
 
@@ -274,6 +274,8 @@ check useoning it with:
 
 volume regular verbs
 
+chapter verbs
+
 the block attacking rule is not listed in any rulebook.
 
 check attacking:
@@ -282,6 +284,23 @@ check attacking:
 
 the block saying no rule is not listed in any rulebook.
 the block saying yes rule is not listed in any rulebook.
+
+chapter eating
+
+the can't eat unless edible rule is not listed in any rulebook.
+
+check eating:
+	if noun is Weak Eek Whey, say "That's plain and inedible." instead;
+	say "Nothing here is worth eating, even if it were cooked in Leet-Eat Ley." instead;
+
+chapter listening
+
+the block listening rule is not listed in any rulebook.
+
+check listening:
+	say "The [slurp]'s noises echo throughout." instead;
+
+chapter yes and no
 
 check saying no: say "Oh, nay!" instead;
 
