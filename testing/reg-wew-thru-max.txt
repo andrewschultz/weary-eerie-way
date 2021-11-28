@@ -1,0 +1,131 @@
+
+## reg-wew-thru-max.txt
+## GENERATOR FILE: rbr-wew-thru.txt
+
+** game: /home/andrew/prt/debug-weary-eerie-way.ulx
+** interpreter: /home/andrew/prt/glulxe -q
+
+* main-thru
+
+Basic examining implementation PASSED.
+Basic talking implementation PASSED.
+
+>n
+>s
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE ID-LAY LID. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>use lid on slurp
+You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. Guess you'll have to use other things together.
+# this is to facilitate shortcuts later
+
+>e
+>w
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>n
+>use whey on drawer
+by one point
+
+>s
+>e
+>use lid on snot
+by one point
+
+>n
+>w
+>e
+>s
+>n
+
+>n
+>s
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>e
+>w
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>e
+>use skill on slump
+by one point
+
+>w
+>use scram on slug
+by one point
+
+>e
+>w
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>s
+>e
+>n
+>s
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+

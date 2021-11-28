@@ -1,0 +1,149 @@
+#-- rbr-wew-thru.txt
+#-- main branch file for Weary Eerie Way walkthroughs
+#--
+#-- use HHV.PY to verify ha-half
+#--
+
+files=reg-wew-thru-min.txt,reg-wew-thru-max.txt
+
+~	min	t0
+~	max	t1
+
+## *FILE
+## *FORK
+
+TSV:## minimum walkthrough
+
+** game: /home/andrew/prt/debug-weary-eerie-way.ulx
+** interpreter: /home/andrew/prt/glulxe -q
+
+* main-thru
+
+Basic examining implementation PASSED.
+Basic talking implementation PASSED.
+
+>n
+>s
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE ID-LAY LID. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>use lid on slurp
+You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. Guess you'll have to use other things together.
+# this is to facilitate shortcuts later
+
+>e
+>w
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>n
+>use whey on drawer
+by one point
+
+>s
+>e
+>use lid on snot
+by one point
+
+>n
+>w
+>e
+>s
+>n
+
+>n
+>s
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>e
+>w
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>e
+>use skill on slump
+by one point
+
+>w
+>use scram on slug
+by one point
+
+>e
+>w
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
+>s
+>e
+>n
+>s
+
+@max
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+
