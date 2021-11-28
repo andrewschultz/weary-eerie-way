@@ -16,8 +16,9 @@ check going when noun is retreatish:
 	repeat through table of dirdrops:
 		if myrm entry is location of player:
 			if myitm entry is not off-stage, next;
-			if there is a myrule entry, abide by the myrule entry;
-			[say "[myrm entry] [myitm entry] [location of myitm entry].";]
+			if there is a myrule entry:
+				process the myrule entry; [ABIDE BY won't work, because otherwise this may short-circuit going backwards in some cases]
+				if the rule failed, continue the action;
 			if there is a mytxt entry:
 				say "[mytxt entry][line break]";
 			now player has myitm entry;
@@ -39,6 +40,7 @@ this is the wrecks-flee rule:
 	if Stirrer Stay is unvisited or Craze Raise Cay is unvisited or Sneer Near Say is unvisited:
 		say "You almost half expect to find something as you flee, but ... nothing's there.";
 		the rule fails;
+	the rule succeeds;
 
 volume useons
 

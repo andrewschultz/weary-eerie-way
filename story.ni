@@ -54,7 +54,12 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [random umpy thing in blimp limp bay][end if].".
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if].".
+
+the force final confrontation rule is listed after the generic directional bounding rule in check going.
+
+check going in Blimp Limp Bay when Ump Slay Slump is touchable (this is the force final confrontation rule):
+	say "No way! Not with [the slurp] so nearby. But perhaps you are carrying what you need to escape." instead;
 
 definition: a thing (called th) is umpy:
 	if th is listed in ump-morphs, yes;
@@ -174,7 +179,7 @@ book Craze Raise Cay
 
 Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say. printed name is "Craze-Raise Cay".
 
-check going to Craze Raise Cay: if Slug is not moot or Slump is not moot, say "You feel a sense of dread. You're not ready yet." instead;
+check going to Craze Raise Cay: if Lug Say Slug is not moot or Lump Say Slump is not moot, say "You feel a sense of dread. You're not ready yet." instead;
 
 chapter Skull Say Cull
 

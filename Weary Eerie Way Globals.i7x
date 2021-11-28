@@ -27,7 +27,7 @@ show-rooms is a truth state that varies.
 after printing the name of a direction (called d) when show-rooms is true:
 	if the room d of location of player is visited, say " to [the room d of location of player]"
 
-check going nowhere:
+check going nowhere (this is the generic directional bounding rule):
 	if noun is not cardinal, say "Only the cardinal directions (north, south, east and west) are used in [this-game]." instead;
 	say "[one of]A voice booms 'Steer [']Ere! Stay!' as you try[or]The Steer-[']Ere-Stay once again pushes you back from[stopping] going [noun]. You can only go [dir-room-list]." instead;
 
