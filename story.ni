@@ -81,12 +81,17 @@ the ire way wire is scenery in Blimp Limp Bay. printed name of ire way wire is "
 
 chapter changing scenery
 
+slurp-bay is a truth state that varies.
+
 after looking in Blimp Limp Bay:
 	if Ump Gray Grump is in Blimp Limp Bay and number of carried things > 0:
 		say "'Sheesh! What am I supposed to do with [i]THAT[r]?' moans [Grump], noticing [the random thing carried by the player] you just picked up. 'Of all the useless...'[paragraph break]Suddenly [Grump] falls down and seems to be almost sucked into the ground. You're not sure if [Grump] actually changes or is covered up quickly. But now where [grump] was, is a pile of hay. An [hump], if you will.";
 		moot ump gray grump;
 		move ump hay hump to blimp limp bay;
 		say "[line break]Well, maybe if you're [i]very[r] lucky, you'll be hit with enough items that turn out to be oddly useful enough to get out of here. Weirder things have happened. Like ending up here in the first place.";
+	if slurp-bay is false and Ump Slay Slump is touchable :
+		say "You hear a noise behind you. The [slurp] has arrived! It consumes a perfectly acceptable rate-'K Crate you hadn't seen before. After taking a few bits, it casts the now ate-cray aside! It pretty clearly means business.";
+		now slurp-bay is true;
 	continue the action;
 
 Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] isn't much for talking, what with all that bumping around.". description is "Not even looking where they're going! Still, in better shape when they were inanimate, or beneath something inanimate."
