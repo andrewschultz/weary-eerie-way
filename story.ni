@@ -42,10 +42,10 @@ include Weary Eerie Way Tests by Andrew Schultz.
 volume when play begins/ends
 
 when play begins:
-	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'You'll want to leave, before the [slurp] finds you,' a gruff voice intones. 'I can fix that here in Blimp-Limp Bay. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you have a piece to fix the blimp. It needs to help make me happy enough to work. Hey, don't judge me back.'";
+	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'You'll want to leave, before the [slurp] finds you,' a gruff voice intones. 'I can fix that here in Blimp-Limp Bay. Or I could have, once. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you can fix the blimp on your own. You can't, even if you changed. I might. Hey, don't judge me back.'";
 	now the right hand status line is "[score]/[maximum score]";
 
-the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp".
+the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE.".
 
 instead of doing something with Urp Slay Slurp:
 	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slump] is right there, ready to help[else]You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape[end if]."
@@ -66,7 +66,7 @@ understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere"
 
 chapter Ump Gray Grump
 
-Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[if player has rope][grump] seems almost happy, unable to turn away from [the rope] you found[else][grump] paces around here, too miserable to be properly motivated or even talk meaningfully. Yet[end if].". talk-text of Ump Gray Grump is "[if player has rope]'The [rope]! Please! I know what to do with it![else]'Hmmph ... nothing I can use yet ...'".
+Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[grump] paces around here, too miserable to be properly motivated or even talk meaningfully. Yet.". description is "[grump] stares crankily back at you, as if to tell you to get going and start looking around.". talk-text of Ump Gray Grump is "You fail to lift [grump] from misery. [grump] shoos you away, in fact. You should probably get going.".
 
 chapter ire way wire
 
@@ -82,7 +82,23 @@ after looking in Blimp Limp Bay:
 		say "[line break]Well, maybe if you're [i]very[r] lucky, you'll be hit with enough items that turn out to be oddly useful enough to get out of here. Weirder things have happened. Like ending up here in the first place.";
 	continue the action;
 
+Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] isn't much for talking, what with all that bumping around."
+
+ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
+
+Ump Gay Gump is a person. printed name is "Ump-Gay-Gump". description is "Slightly dopey-looking, but good-hearted, and happier than [grump] for sure.". talk-text is "[gump] begins to babble how life is like a box of chocolates. Halloween half-price or not.[paragraph break]The life-enhancing aphorisms are all well and good, but you'd appreciate them more if they were intertwined with, you know, concrete action that would, you know, get back to a life to enhance."
+
 an ump hay hump is scenery in blimp limp bay. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
+
+Ump Lay Lump is a person. printed name is "Ump-Lay-Lump". talk-text is "[lump] is barely conscious and not really up to speaking."
+
+ump pay pump is scenery. indefinite article is "some". printed name is "ump-pay-pump". "Well, it's a pump where you have to pay. You have no method of payment. So it can't help you much right now."
+
+Ump Slay Slump is a person. printed name is "Ump-Slay-Slump". description is "[slump] seems to be looking intently at your [rope].". talk-text is "'I don't like just sitting around and chatting. You know what gets me out of a slump? Work! And material to work with!'"
+
+ump stay stump is scenery. printed name is "ump-stay-stump". "It's just a tree stump. You can't do much with a stump. You can maybe feel less stumped for a bit. I don't know."
+
+ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump bay bump, ump gay gump, ump slay slump }.
 
 book Roar Day Drawer / rdd
 
@@ -242,16 +258,6 @@ this is the useon reject rule:
 this is the wide ranging useon rule: [this is for any general rejects to help the player]
 	if second noun is the player, say "You never need to USE anything on yourself." instead;
 	continue the action;
-
-ump pay pump is scenery.
-ump stay stump is scenery.
-ump clay clump is scenery.
-ump lay lump is a person.
-ump bay bump is a person.
-ump gay gump is a person.
-ump slay slump is a person.
-
-ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump bay bump, ump gay gump, ump slay slump }.
 
 chapter useing
 
