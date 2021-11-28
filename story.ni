@@ -61,7 +61,11 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if].".
+last-bay-score is a number that varies.
+
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if][if score > last-bay-score][new-found-ump][end if].".
+
+to say new-found-ump: say ". It seems to have replaced [the entry (last-bay-score + 1) in ump-morphs] from last time you were here, which is progress, hopefully";
 
 the force final confrontation rule is listed after the generic directional bounding rule in check going.
 
@@ -97,9 +101,10 @@ after looking in Blimp Limp Bay:
 	if slurp-bay is false and Ump Slay Slump is touchable :
 		say "You hear a noise behind you. The [slurp] has arrived! It consumes a perfectly acceptable rate-'K Crate you hadn't seen before. After taking a few bits, it casts the now ate-cray aside! It pretty clearly means business.";
 		now slurp-bay is true;
+	if number of npcish people in blimp limp bay > 0 and last-bay-score > 0 and last-bay-score < 3:
+		say "Oh my goodness. Signs of life from the former [grump]! Things are looking up!";
+	now last-bay-score is the score;
 	continue the action;
-
-Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] isn't much for talking, what with all that bumping around.". description is "Not even looking where they're going! Still, in better shape when they were inanimate, or beneath something inanimate."
 
 an ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
 
@@ -124,7 +129,7 @@ Ump Slay Slump is a person. printed name is "Ump-Slay-Slump". description is "[s
 
 an ump stay stump is scenery. printed name is "ump-stay-stump". "It's just a tree stump. You can't do much with a stump. You can maybe feel less stumped for a bit. I don't know."
 
-ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump bay bump, ump gay gump, ump slay slump }.
+ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump gay gump, ump slay slump }.
 
 book Roar Day Drawer / Ate Er Cray Crater
 
