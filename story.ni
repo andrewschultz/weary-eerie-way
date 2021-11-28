@@ -27,6 +27,8 @@ include Trivial Niceties by Andrew Schultz.
 
 include Punctuation Stripper by Andrew Schultz.
 
+include Pig Latin Globals by Andrew Schultz.
+
 include Weary Eerie Way Globals by Andrew Schultz.
 
 include Weary Eerie Way Tables by Andrew Schultz.
@@ -232,19 +234,6 @@ carry out justusing: say "I couldn't figure what you wanted to use [if noun is a
 
 volume options
 
-chapter rming
-
-rming is an action applying to nothing.
-
-understand the command "rm" as something new.
-
-understand "rm" as rming.
-
-carry out rming:
-	now opt-short-names is whether or not opt-short-names is false;
-	say "Short room view is now [on-off of opt-short-names] for visited rooms.";
-	the rule succeeds.
-
 volume regular verbs
 
 the block attacking rule is not listed in any rulebook.
@@ -349,7 +338,6 @@ understand the command "swallow" as something new.
 understand the command "sweep" as something new.
 understand the command "taste" as something new.
 understand the command "tell" as something new.
-understand the command "tell" as something new.
 understand the command "thump" as something new.
 understand the command "tie" as something new.
 understand the command "torture" as something new.
@@ -360,5 +348,3 @@ understand the command "wipe" as something new.
 understand the command "wreck" as something new.
 
 volume out of world
-
-Binnin Bay is a room. printed name is "Binnin['] Bay". [this is the moot room, formerly Aced Way]

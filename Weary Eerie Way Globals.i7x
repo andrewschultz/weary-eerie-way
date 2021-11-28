@@ -38,22 +38,11 @@ a room can be southed.
 a room can be easted.
 a room can be northed.
 
-volume stubs
-
-to moot (th - a thing): move th to Binnin Bay.
-
-definition: a thing (called th) is moot:
-	if th is in Binnin Bay, yes;
-	no;
-
 volume parser stuff
 
-rule for printing a parser error when the latest parser error is the not a verb i recognise error:
-	say "I didn't recognize that. [this-game] does not have an extensive verb list. You can see it with [b]VERBS[r] or [b]V[r].";
+[most is covered in the Pig Latin globals]
 
 volume rules
-
-procedural rule: ignore the print final score rule.
 
 volume global variables
 
