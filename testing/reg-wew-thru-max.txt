@@ -9,6 +9,8 @@
 
 Basic examining implementation PASSED.
 Basic talking implementation PASSED.
+!needs a description.
+!needs talk-text.
 
 >n
 >s
@@ -25,9 +27,14 @@ Basic talking implementation PASSED.
 >z
 A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU PPOOOSSSEEEEESSSS THHE ID-LAY LID. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
->use lid on slurp
-You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. Guess you'll have to use other things together.
 # this is to facilitate shortcuts later
+>x slurp
+Far too indescribable for words. It's more something you can just SENSE. Speaking of sensing...
+You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. But hey, breaking the fourth wall here, that could make it a lot ambiguous to USE something you're carrying without specifying a subject.
+
+>x slurp
+Far too indescribable for words. It's more something you can just SENSE.
+!Speaking of sensing...
 
 >e
 >w
@@ -168,10 +175,10 @@ by one point
 No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.
 
 >w
-A voice booms "Steer 'Ere! Stay!" as you try going west. You can only go north to Ate-Cray Crate and east to Bill-Ill Bay.
+A voice booms "Steer 'Ere! Stay!" as you try going west. You can only go north to Ate-'Er-Cray Crater and east to Bill-Ill Bay.
 
 >s
-The Steer-'Ere-Stay once again pushes you back from going south. You can only go north to Ate-Cray Crate and east to Bill-Ill Bay.
+The Steer-'Ere-Stay once again pushes you back from going south. You can only go north to Ate-'Er-Cray Crater and east to Bill-Ill Bay.
 
 >e
 No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.

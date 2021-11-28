@@ -10,13 +10,16 @@
 
 Basic examining implementation PASSED.
 Basic talking implementation PASSED.
+!needs a description.
+!needs talk-text.
 
 >n
 >s
 
->use lid on slurp
-You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. Guess you'll have to use other things together.
 # this is to facilitate shortcuts later
+>x slurp
+Far too indescribable for words. It's more something you can just SENSE. Speaking of sensing...
+You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. But hey, breaking the fourth wall here, that could make it a lot ambiguous to USE something you're carrying without specifying a subject.
 
 >e
 >w
