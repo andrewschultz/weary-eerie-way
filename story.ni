@@ -100,7 +100,7 @@ an ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a lar
 
 Ump Gay Gump is a person. printed name is "Ump-Gay-Gump". description is "Slightly dopey-looking, but good-hearted, and happier than [grump] for sure.". talk-text is "[gump] begins to babble how life is like a box of chocolates. Halloween half-price or not.[paragraph break]The life-enhancing aphorisms are all well and good, but you'd appreciate them more if they were intertwined with, you know, concrete action that would, you know, get back to a life to enhance."
 
-an ump hay hump is scenery in blimp limp bay. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
+an ump hay hump is scenery. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
 
 Ump Lay Lump is a person. printed name is "Ump-Lay-Lump". description is "Just lying out there. Whether lie or lay is strictly proper, that doesn't matter. They seem so close to consciousness and maybe helping you!". talk-text is "[lump] is barely conscious and not really up to speaking."
 
@@ -202,7 +202,7 @@ chapter Rope Gay Grope
 
 the Rope Gay Grope is a thing. description is "You feel happier just holding the [grope], like you can do ... well, lots of stuff.". printed name is "Rope Gay-Grope".
 
-volume verbs
+volume irregular verbs
 
 chapter useoning
 
@@ -345,8 +345,23 @@ check eating:
 
 chapter inventory
 
+definition: a thing (called th) is physical:
+	if th is own gray groan, no;
+	if th is kill say skill, no;
+	if th is cram say scram, no;
+	yes;
+
 check taking inventory:
+	if number of carried things is 0, say "You are currently bereft of useful items and ideas, but you are sure you will find [if score is 0]some, soon[else]more[end if]." instead;
+	say "You are[if number of carried physical things is 0]n't currently carrying anything[else] currently carrying [a list of carried physical things][end if].";
+	say "[line break]";
+	let ncp be number of carried not physical things;
+	if ncp is 0:
+		say "You don't have any ideas worth using in the right place.";
+	else:
+		say "You've gotten acquainted with [if ncp is 1]an idea[else]some ideas[end if] worth using later: [a list of carried not physical things].";
 	now all carried things are remarked;
+	the rule succeeds;
 
 chapter listening
 
@@ -354,6 +369,14 @@ the block listening rule is not listed in any rulebook.
 
 check listening:
 	say "The [slurp]'s noises echo throughout." instead;
+
+chapter taking
+
+the mention taking is useless rule is listed first in the check taking rules.
+
+check taking (this is the mention taking is useless rule):
+	if the noun is carried by the player, say "You already have [the noun].";
+	say "You never need to TAKE anything in this game." instead;
 
 chapter waking
 
