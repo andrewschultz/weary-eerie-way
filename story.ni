@@ -75,7 +75,7 @@ Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". 
 
 chapter ire way wire
 
-the ire way wire is scenery in Blimp Limp Bay.
+the ire way wire is scenery in Blimp Limp Bay. printed name of ire way wire is "ire-way wire". description is "You don't want to mess with [the wire]. It loooks confusing. [if the score is 6]But you have what [slay slump] needs![else]But [grump] could have helped and maybe could help again in the future."
 
 chapter changing scenery
 
@@ -87,45 +87,43 @@ after looking in Blimp Limp Bay:
 		say "[line break]Well, maybe if you're [i]very[r] lucky, you'll be hit with enough items that turn out to be oddly useful enough to get out of here. Weirder things have happened. Like ending up here in the first place.";
 	continue the action;
 
-Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] isn't much for talking, what with all that bumping around."
+Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] isn't much for talking, what with all that bumping around.". description is "Not even looking where they're going! Still, in better shape when they were inanimate, or beneath something inanimate."
 
-ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
+an ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
 
 Ump Gay Gump is a person. printed name is "Ump-Gay-Gump". description is "Slightly dopey-looking, but good-hearted, and happier than [grump] for sure.". talk-text is "[gump] begins to babble how life is like a box of chocolates. Halloween half-price or not.[paragraph break]The life-enhancing aphorisms are all well and good, but you'd appreciate them more if they were intertwined with, you know, concrete action that would, you know, get back to a life to enhance."
 
 an ump hay hump is scenery in blimp limp bay. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
 
-Ump Lay Lump is a person. printed name is "Ump-Lay-Lump". talk-text is "[lump] is barely conscious and not really up to speaking."
+Ump Lay Lump is a person. printed name is "Ump-Lay-Lump". description is "Just lying out there. Whether lie or lay is strictly proper, that doesn't matter. They seem so close to consciousness and maybe helping you!". talk-text is "[lump] is barely conscious and not really up to speaking."
 
-ump pay pump is scenery. indefinite article is "some". printed name is "ump-pay-pump". "Well, it's a pump where you have to pay. You have no method of payment. So it can't help you much right now."
+an ump pay pump is scenery. printed name is "ump-pay-pump". "Well, it's a pump where you have to pay. You have no method of payment. So it can't help you much right now."
 
-Ump Slay Slump is a person. printed name is "Ump-Slay-Slump". description is "[slump] seems to be looking intently at your [rope].". talk-text is "'I don't like just sitting around and chatting. You know what gets me out of a slump? Work! And material to work with!'"
+Ump Slay Slump is a person. printed name is "Ump-Slay-Slump". description is "[slay slump] seems to be looking intently at your [rope].". talk-text is "'I don't like just sitting around and chatting. You know what gets me out of a slump? Work! And material to work with!'"
 
-ump stay stump is scenery. printed name is "ump-stay-stump". "It's just a tree stump. You can't do much with a stump. You can maybe feel less stumped for a bit. I don't know."
+an ump stay stump is scenery. printed name is "ump-stay-stump". "It's just a tree stump. You can't do much with a stump. You can maybe feel less stumped for a bit. I don't know."
 
 ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump bay bump, ump gay gump, ump slay slump }.
 
-book Roar Day Drawer / rdd
+book Roar Day Drawer / Ate Er Cray Crater
 
-rdd is north of Blimp Limp Bay. printed name of rdd is "[if roar day drawer is moot]Ate-Cray Crate[else]Roar Day Drawer[end if]". shorttext of rdd is "[if roar day drawer is moot]Crate[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
+Ate Er Cray Crater is north of Blimp Limp Bay. printed name of Ate Er Cray Crater is "[if roar day drawer is moot]Ate-[']Er-Cray Crater[else]Roar Day Drawer[end if]". shorttext of Ate Er Cray Crater is "[if roar day drawer is moot]Crater[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
 
-understand "ate cray crate" and "ate cray" and "ate/cray crate" and "ate/cray" as rdd when Roar Day Drawer is moot.
-
-check going east in rdd: if roar day drawer is not moot, say "The [drawer] yells and bocks you." instead;
+check going east in Ate Er Cray Crater: if roar day drawer is not moot, say "The [drawer] bellows and bocks your way east." instead;
 
 chapter Roar Day Drawer
 
-the Roar Day Drawer is scenery in rdd.
+the Roar Day Drawer is scenery in Ate Er Cray Crater. "Well, it just doesn't stop roaring!"
 
 chapter Id Lay Lid
 
-the Id Lay Lid is a thing. printed name is "Id-Lay Lid".
+the Id Lay Lid is a thing. printed name is "Id-Lay Lid". description is "It's a bit sharp around the edges. It could certainly bleed out your ego, but it could probably deflate bigger, more fragile egos much more quickly."
 
 book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay. printed name is "Bill-Ill Bay".
 
-The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
+The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". description of not say snot is "The sneer seems almost etched on. The [snot] can barely be bothered to look at you directly.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
 
 check going north in Bill Ill Bay: if Not Say Snot is touchable, say "The [snot] wags its finger. It looks north and shudders as if to say, it's too scary to go that way. It makes an arm motion to bar you going north. It gestures to you as if to say it's doing all this FOR YOU." instead;
 
@@ -138,7 +136,7 @@ book X Ray Wrecks
 check going to X Ray Wrecks:
 	if Drawer is not moot or Snot is not moot, say "You feel impeded by some unnatural force. Perhaps there is more to do." instead;
 
-X Ray Wrecks is north of Bill Ill Bay. It is east of rdd. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
+X Ray Wrecks is north of Bill Ill Bay. It is east of Ate Er Cray Crater. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
 
 check going in X Ray Wrecks:
 	if noun is north or noun is east:
@@ -155,7 +153,7 @@ Sneer Near Say is east of X Ray Wrecks. printed name is "Sneer Near, Say".
 
 chapter Lump Say Slump
 
-Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump". talk-text is "You try to start conversations, but the [slump] beings complaining about, well, nearly anything."
+Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump". talk-text is "You try to start conversations, but the [say slump] beings complaining about, well, nearly anything.". description is "It's a green sentient blobby thing that shifts itself (and, likely, its arguments) around despite no perceptible wind."
 
 check going north in Sneer Near Say: if lump say slump is touchable, say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
@@ -167,7 +165,7 @@ book Stirrer Stay
 
 Stirrer Stay is north of X Ray Wrecks.
 
-Lug Say Slug is a person in Stirrer Stay. talk-text is "The [slug] isn't much for conversation. It would probably just get mad if you said anything. You may have to use your wits, or something you've found along the way."
+Lug Say Slug is a person in Stirrer Stay. talk-text is "The [slug] isn't much for conversation. It would probably just get mad if you said anything. You may have to use your wits, or something you've found along the way.". printed name is "Lug-Say Slug". description of slug is "It's big and gray, even grayer than you remember [grump], and wrinkly, too. Sadly, since I offered some Alt-Say Salt in [utt], you'll need to find something else to repel the [slug]."
 
 check going east in Stirrer Stay: if lug say slug is touchable, say "Not with [lug] around. It's pretty violent!" instead;
 
@@ -183,7 +181,7 @@ check going to Craze Raise Cay: if Lug Say Slug is not moot or Lump Say Slump is
 
 chapter Skull Say Cull
 
-Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull". "[skull] wavers back and forth here, being generally scary and threatening and demoralizing. Your nemesis! How to defeat it?". talk-text is "The [skull] gives out a spooky whoo-oo-ooh in response. There's no reasoning with that!"
+Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull". "[skull] wavers back and forth here, being generally scary and threatening and demoralizing. Your nemesis! How to defeat it?". description is "Fearsome, fearsome, fearsome! It would be looking down on you even if it couldn't leviate.". talk-text is "The [skull] gives out a spooky whoo-oo-ooh in response. There's no reasoning with that!"
 
 chapter Eel Stay Steel
 
