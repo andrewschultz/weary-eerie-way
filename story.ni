@@ -52,13 +52,15 @@ volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs]."
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs].".
+
+the player is in Blimp Limp Bay.
 
 understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
 
 chapter Ump Gray Grump
 
-Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[if player has rope][grump] seems almost happy, unable to turn away from [the rope] you found[else][grump] paces around here, too miserable to be properly motivated or even talk. Yet[end if]."
+Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". "[if player has rope][grump] seems almost happy, unable to turn away from [the rope] you found[else][grump] paces around here, too miserable to be properly motivated or even talk meaningfully. Yet[end if].". talk-text of Ump Gray Grump is "[if player has rope]'The [rope]! Please! I know what to do with it![else]'Hmmph ... nothing I can use yet ...'".
 
 chapter ire way wire
 
@@ -84,7 +86,7 @@ book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay. printed name is "Bill-Ill Bay".
 
-The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". printed name is "Not-Say Snot".
+The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
 
 check going north in Bill Ill Bay: if Not Say Snot is touchable, say "The [snot] wags its finger. It looks north and shudders as if to say, it's too scary to go that way. It makes an arm motion to bar you going north. It gestures to you as if to say it's doing all this FOR YOU." instead;
 
@@ -114,7 +116,7 @@ Sneer Near Say is east of X Ray Wrecks. printed name is "Sneer Near, Say".
 
 chapter Lump Say Slump
 
-Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump".
+Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump". talk-text is "You try to start conversations, but the [slump] beings complaining about, well, nearly anything."
 
 check going north in Sneer Near Say: if lump say slump is touchable, say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
@@ -126,7 +128,7 @@ book Stirrer Stay
 
 Stirrer Stay is north of X Ray Wrecks.
 
-Lug Say Slug is a person in Stirrer Stay.
+Lug Say Slug is a person in Stirrer Stay. talk-text is "The [slug] isn't much for conversation. It would probably just get mad if you said anything. You may have to use your wits, or something you've found along the way."
 
 check going east in Stirrer Stay: if lug say slug is touchable, say "Not with [lug] around. It's pretty violent!" instead;
 
@@ -142,7 +144,7 @@ check going to Craze Raise Cay: if Slug is not moot or Slump is not moot, say "Y
 
 chapter Skull Say Cull
 
-Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull". "[skull] wavers back and forth here, being generally scary and threatening and demoralizing. Your nemesis! How to defeat it?"
+Skull Say Cull is a person in Craze Raise Cay. printed name is "Skull-Say-Cull". "[skull] wavers back and forth here, being generally scary and threatening and demoralizing. Your nemesis! How to defeat it?". talk-text is "The [skull] gives out a spooky whoo-oo-ooh in response. There's no reasoning with that!"
 
 chapter Eel Stay Steel
 
