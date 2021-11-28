@@ -46,7 +46,7 @@ volume rules
 
 volume global variables
 
-the maximum score is 6.
+the maximum score is 7.
 
 volume definitions and options
 

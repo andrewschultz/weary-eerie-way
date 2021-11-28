@@ -55,10 +55,10 @@ book Blimp Limp Bay
 Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [random umpy thing in blimp limp bay][end if].".
 
 definition: a thing (called th) is umpy:
-	if th is ump hay hump, yes;
+	if th is listed in ump-morphs, yes;
 	no;
 
-the player is in Blimp Limp Bay.
+the player is in Blimp Limp Bay. description of player is "You! Ooh, yay!".
 
 understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
 
@@ -207,11 +207,14 @@ carry out useoning:
 		if noun is u1 entry and second noun is u2 entry:
 			if there is a pre-rule entry, abide by the pre-rule entry;
 			if there is a post-rule entry, process the post-rule entry;
+			moot entry (the score + 1) in ump-morphs;
 			if there is a get-point entry:
 				process the get-point entry;
-				if the rule succeeded, increment the score;
+				if the rule succeeded:
+					increment the score;
 			else:
 				increment the score;
+			move entry (the score + 1) in ump-morphs to blimp limp bay;
 			if v1 entry is true, moot u1 entry;
 			if v2 entry is true, moot u2 entry;
 			if there is a new-item entry, now player has new-item entry;
@@ -237,6 +240,16 @@ this is the useon reject rule:
 this is the wide ranging useon rule: [this is for any general rejects to help the player]
 	if second noun is the player, say "You never need to USE anything on yourself." instead;
 	continue the action;
+
+ump pay pump is scenery.
+ump stay stump is scenery.
+ump clay clump is scenery.
+ump lay lump is a person.
+ump bay bump is a person.
+ump gay gump is a person.
+ump slay slump is a person.
+
+ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay pump, ump stay stump, ump clay clump, ump lay lump, ump bay bump, ump gay gump, ump slay slump }.
 
 chapter useing
 

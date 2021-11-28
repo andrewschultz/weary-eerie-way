@@ -106,7 +106,7 @@ Now to backpedal.
 
 >E
 
-Now we have what we need for Ump-Gray-Grump.
+Now we have what we need for Ump-Gray-Grump. Umm, Ump-Gray-Grump's new form.
 
 >W
 
@@ -116,4 +116,4 @@ Now we have what we need for Ump-Gray-Grump.
 
 >W
 
->USE ROPE ON GRUMP
+>USE ROPE ON SLUMP

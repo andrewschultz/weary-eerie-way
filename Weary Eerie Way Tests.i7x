@@ -11,7 +11,7 @@ when play begins:
 			say "[PER] needs talk-text.";
 			increment need-text;
 	if need-text is 0:
-		say "Basic implementation PASSED.";
+		say "Basic talking implementation PASSED.";
 	else:
 		say "Talking implementation[if need-text > 1]s[end if] still required: [need-text].";
 	now need-text is 0;
@@ -20,13 +20,13 @@ when play begins:
 			say "[THI] needs a description.";
 			increment need-text;
 	if need-text is 0:
-		say "Basic implementation PASSED.";
+		say "Basic examining implementation PASSED.";
 	else:
 		say "Description implementation[if need-text > 1]s[end if] still required: [need-text].";
 
 volume automation
 
-test w with "e/w/n/use whey on drawer/s/e/use lid on snot/n/w/e/s/n/e/w/n/use scram on slug/s/e/use skill on slump/n/s/w/w/e/s/n/n/e/s/n/w/e/use groan on skull/w/s/s/w/n/e/e/n/s/w/w/s/e/n/n/e/w/s/s/w/use rope on grump"
+test w with "e/w/n/use whey on drawer/s/e/use lid on snot/n/w/e/s/n/e/w/n/use scram on slug/s/e/use skill on slump/n/s/w/w/e/s/n/n/e/s/n/w/e/use groan on skull/w/s/s/w/n/e/e/n/s/w/w/s/e/n/n/e/w/s/s/w/use rope on slump"
 
 Weary Eerie Way Tests ends here.
 
