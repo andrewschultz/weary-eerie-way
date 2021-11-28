@@ -287,9 +287,12 @@ the block saying yes rule is not listed in any rulebook.
 
 chapter eating
 
+procedural rule while eating something: ignore the carrying requirements rule.
+
 the can't eat unless edible rule is not listed in any rulebook.
 
 check eating:
+	if noun is a person, say "Ick! Say, sick!" instead;
 	if noun is Weak Eek Whey, say "That's plain and inedible." instead;
 	say "Nothing here is worth eating, even if it were cooked in Leet-Eat Ley." instead;
 

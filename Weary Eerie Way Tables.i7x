@@ -72,6 +72,8 @@ this is the use-groan-skull rule:
 	say "You focus the [groan] on the [skull]. A light emanates from above the [groan] to the [skull] and back up to the heavens.[paragraph break]As the skull begins to jabber away defensively, you start groaning louder. The skull is upset! It was groaning first! It rushes at you! Your [steel] vaporizes as the [skull] bashes you. It rolls back but then rolls forward as you draw your [shard].[paragraph break]Again, your [shard] vaporizes, but this time, you see a crack in the [skull]. It freezes momentarily. It can't move. Well, it bangs its head on the ground, forgetting that it is just a head. Very shortly, it shatters into many pieces, which themselves dissolve in the air. Go, you![paragraph break]Sadly, there's no treasure or anything where the [skull] used to be.";
 	now all rooms are not wested;
 	now all rooms are not southed;
+	moot hard say shard;
+	moot eel stay steel;
 
 this is the use-whey-drawer rule:
 	say "You schlop the whey at the drawer. It sticks! And the drawer slowly quiets down. It's a bit embarrassed by all this, and it picks up its legs and moves away.[paragraph break]It's no longer blocking the way east."
