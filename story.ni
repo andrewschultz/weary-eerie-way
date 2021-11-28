@@ -266,7 +266,7 @@ carry out useoning:
 					increment the score;
 			else:
 				increment the score;
-			move entry (the score + 1) in ump-morphs to blimp limp bay;
+			if score is not maximum score, move entry (the score + 1) in ump-morphs to blimp limp bay;
 			if v1 entry is true, moot u1 entry;
 			if v2 entry is true, moot u2 entry;
 			if there is a new-item entry, now player has new-item entry;
