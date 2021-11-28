@@ -99,36 +99,43 @@ volume keywords
 
 table of keywords
 stuff (topic)	what-to-say	what-to-do
-"bay/bump"	--	a rule
-"che/chez/chump"	"You don't need to head chaz some chump right now."
-"clay/clump"	--	--
+"bump"	"You'll be crashing around enough."	a thing
+"che/chez/chump"	"You don't need to head chez some chump right now."
+"clay/clump"	--	ump clay clump
 "fray/frump"	"You have a snide thought about the fading looks of someone you dislike."
-"gay/gump"	--	--
-"grey/gray/grump"	--	--
-"hay/hey/hump"	--	--
+"gay/gump"	--	ump gay gump
+"grey/gray/grump"	"If you help yourself, you'll be able to  help [the grump]."	--
+"hay/hey/hump"	--	ump hay hump
 "jay/jump"	"You consider getting high."
-"lay/lump"	--	--
-"pay/pump"	--	--
+"lay/lump"	--	ump lay lump
+"pay/pump"	--	ump pay pump
 "play/plump"	"You puff your stomach out for a bit, pointlessly."
 "ray/rump"	"I don't want to know what you're thinking."
-"say/sump"	"Your babble produces no sump-pump. Thankfully, you don't need a sump-pump."
-"slay/slump"	--
-"stay/stump"	--
+"say/sump"	"Your babble produces no sump-pump. Thankfully, you don't need a sump-pump on top of all this."
+"slay/slump"	"Yes, [if slay slump is touchable]now you're at[else]in[end if] the end, you will need to slay your slump. But you can't just vow to do so."
+"stay/stump"	--	ump stay stump
 "they/thump"	"That was last game, in [utt]. You don't need Ump-They-Thump making things worse."
 "tray/trump"	"Alas, no tray carrying a deus-ex-machina item pops up."
 
 to decide which thing is current-ump:
 	decide on entry (the score + 1) in ump-morphs;
 
-rule for printing a parser error:
+rule for printing a parser error (this is the ump pig latin rule):
+	if player is not in blimp limp bay, continue the action;
+	if player has rope gay grope, continue the action;
 	repeat through table of keywords:
 		if the player's command includes stuff entry:
 			if there is a what-to-say entry:
-				say "[what-to-say entry][line break]";
+				if player has rope gay grope:
+					say "More action, less attempted wordplay. [slay slump] has the power to get fancy and change things right now, not you.";
+				else:
+					say "[what-to-say entry][line break]";
 			else if there is a what-to-do entry:
-				abide by the what-to-do entry;
+				if what-to-do entry is touchable, say "You don't need to do anything special with [the what-to-do entry]." instead;
+				if what-to-do entry is moot, say "The [what-to-do entry] is in the past. Onward!" instead;
+				if what-to-do entry is off-stage, say "You've guessed at something [the grump] can become, but you need to make your own progress, here." instead;
 			else:
-				say "You don't really need to tinker with [the current-ump].";
+				say "You can't really tinker with [the current-ump]. You don't really have magical powers.";
 			the rule succeeds;
 	continue the action;
 
