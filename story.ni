@@ -160,6 +160,8 @@ volume verbs
 
 chapter useoning
 
+slurp-use is a truth state that varies.
+
 to decide whether (t1 - a thing) and (t2 - a thing) are flippable:
 	if t1 is a person:
 		if t2 is not a person, yes;
@@ -179,6 +181,10 @@ understand "u [thing] on/with [thing]" as useoning it with.
 
 carry out useoning:
 	if debug-state is true, say "DEBUG: USEONing [noun] on [second noun].";
+	if noun is slurp or second noun is slurp:
+		say "You sense you can do nothing to [the slurp], even though you feel it all around[one of]. Guess you'll have to use other things together[or][stopping]."; [?? what about end]
+		now slurp-use is true;
+		the rule succeeds;
 	repeat through table of useons:
 		if noun is u1 entry and second noun is u2 entry:
 			if there is a pre-rule entry, abide by the pre-rule entry;
@@ -216,8 +222,21 @@ this is the wide ranging useon rule: [this is for any general rejects to help th
 
 chapter useing
 
+definition: a thing (called t) is useonable:
+	unless t is touchable, no;
+	if t is enclosed by the player, no;
+	if t is the player, no;
+	if t is urp slay slurp and slurp-use is true, no;
+	if t is noun, no;
+	yes;
+
 carry out useing:
-	say "You need to USE something ON/WITH something else. At least for the initial, speed-programmed release." instead;
+	let n be number of useonable things;
+	if n is 0, say "You see nothing around you to USE anything on." instead;
+	if n > 1, say "USE is ambiguous here, so you'll have to USE on. You have [the list of useonable things] to USE [the noun] on." instead;
+	let RUT be random useonable thing;
+	say "(using on [RUT])[line break]";
+	try useoning noun with RUT instead;
 
 chapter use thing on text
 
