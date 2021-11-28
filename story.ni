@@ -47,10 +47,15 @@ when play begins:
 	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'That's a busted wire there in your blimp,' a gruff voice intones. 'An ire-way wire, to be precise!' You look over to see someone very drab indead.[paragraph break]'You picked a bad place to crash, what with the [slurp] hanging around. Well, maybe not so bad. I can fix your blimp. Or I could have, once. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you can fix the blimp on your own. You can't, even if you changed yourself. I might. Hey, don't judge me back. I am who I am.'[paragraph break]That's not optimally helpful, but hey, it's [i]something[r].";
 	wfak;
 
-the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE.".
+the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
 
 instead of doing something with Urp Slay Slurp:
-	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape[end if]."
+	if current action is useing or current action is useoning or current action is examining, continue the action;
+	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]Trying to do anything directly to the [slurp] just won't work. It will probably distract you from trying to leave.";
+	abide by the slurp-nonviable rule;
+
+after examining slurp:
+	abide by the slurp-nonviable rule;
 
 volume rooms
 
@@ -234,12 +239,17 @@ understand "u [thing]" as useing.
 understand "use [thing] on/with [thing]" as useoning it with.
 understand "u [thing] on/with [thing]" as useoning it with.
 
+this is the slurp-nonviable rule:
+	if slurp-use is false:
+		say "You sense you can do nothing to [the slurp], even though [if player has rope]it's far too close[else]you feel it all around[end if]. But hey, breaking the fourth wall here, that could make it a lot ambiguous to [b]USE[r] something you're carrying without specifying a subject.";
+		now slurp-use is true;
+	the rule succeeds;
+
 carry out useoning:
 	if debug-state is true, say "DEBUG: USEONing [noun] on [second noun].";
 	if noun is slurp or second noun is slurp:
-		say "You sense you can do nothing to [the slurp], even though [if player has rope]it's far too close[else]you feel it all around[end if][one of]. Guess you'll have to use other things together[or][stopping].";
-		now slurp-use is true;
-		the rule succeeds;
+		if slurp-use is true, say "No, you still don't need to use anything on [the slurp], or vice-versa." instead;
+		abide by the slurp-nonviable rule;
 	repeat through table of useons:
 		if noun is u1 entry and second noun is u2 entry:
 			if there is a pre-rule entry, abide by the pre-rule entry;
@@ -289,6 +299,9 @@ definition: a thing (called t) is useonable:
 	yes;
 
 carry out useing:
+	if noun is slurp:
+		say "You are nowhere near powerful enough to use [the slurp], and even if you were, no good would come of it.";
+		abide by the slurp-nonviable rule;
 	let n be number of useonable things;
 	if n is 0, say "You see nothing around you to USE anything on." instead;
 	if n > 1, say "USE is ambiguous here, so you'll have to USE on. You have [the list of useonable things] to USE [the noun] on." instead;
