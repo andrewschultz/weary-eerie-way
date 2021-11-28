@@ -96,7 +96,42 @@ rope gay grope	ire way wire	a rule	"No, you don't have the technical skill. But 
 id lay lid	roar day drawer	--	"No, you got the lid from the drawer."
 own gray groan	Lug Say Slug	--	"Perhaps if the [slug] were more inclined to words, that would work."
 
-volume FINAL PUZZLE
+volume keywords
+
+table of keywords
+stuff (topic)	what-to-say	what-to-do
+"bay/bump"	--	a rule
+"che/chez/chump"	"You don't need to head chaz some chump right now."
+"clay/clump"	--	--
+"fray/frump"	"You have a snide thought about the fading looks of someone you dislike."
+"gay/gump"	--	--
+"grey/gray/grump"	--	--
+"hay/hey/hump"	--	--
+"jay/jump"	"You consider getting high."
+"lay/lump"	--	--
+"pay/pump"	--	--
+"play/plump"	"You puff your stomach out for a bit, pointlessly."
+"ray/rump"	"I don't want to know what you're thinking."
+"say/sump"	"Your babble produces no sump-pump. Thankfully, you don't need a sump-pump."
+"slay/slump"	--
+"stay/stump"	--
+"they/thump"	"That was last game, in [utt]. You don't need Ump-They-Thump making things worse."
+"tray/trump"	"Alas, no tray carrying a deus-ex-machina item pops up."
+
+to decide which thing is current-ump:
+	decide on entry (the score + 1) in ump-morphs;
+
+rule for printing a parser error:
+	repeat through table of keywords:
+		if the player's command includes stuff entry:
+			if there is a what-to-say entry:
+				say "[what-to-say entry][line break]";
+			else if there is a what-to-do entry:
+				abide by the what-to-do entry;
+			else:
+				say "You don't really need to tinker with [the current-ump].";
+			the rule succeeds;
+	continue the action;
 
 volume FINAL PUZZLE
 
