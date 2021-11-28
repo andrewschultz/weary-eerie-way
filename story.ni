@@ -42,19 +42,21 @@ include Weary Eerie Way Tests by Andrew Schultz.
 volume when play begins/ends
 
 when play begins:
-	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'You'll want to leave, before the [slurp] finds you,' a gruff voice intones. 'I can fix that here in Blimp-Limp Bay. Or I could have, once. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you can fix the blimp on your own. You can't, even if you changed. I might. Hey, don't judge me back.'";
 	now the right hand status line is "[score]/[maximum score]";
+	force-status;
+	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'That's a busted wire there in your blimp,' a gruff voice intones. 'An ire-way wire, to be precise!' You look over to see someone very drab indead.[paragraph break]'You picked a bad place to crash, what with the [slurp] hanging around. Well, maybe not so bad. I can fix your blimp. Or I could have, once. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you can fix the blimp on your own. You can't, even if you changed yourself. I might. Hey, don't judge me back. I am who I am.'[paragraph break]That's not optimally helpful, but hey, it's [i]something[r].";
+	wfak;
 
 the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE.".
 
 instead of doing something with Urp Slay Slurp:
-	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slump] is right there, ready to help[else]You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape[end if]."
+	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape[end if]."
 
 volume rooms
 
 book Blimp Limp Bay
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, you know there is a way out once it is fixed. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if].".
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if].".
 
 the force final confrontation rule is listed after the generic directional bounding rule in check going.
 
@@ -155,7 +157,7 @@ chapter Lump Say Slump
 
 Lump Say Slump is a person in Sneer Near Say. printed name is "Lump-Say-Slump". talk-text is "You try to start conversations, but the [say slump] beings complaining about, well, nearly anything.". description is "It's a green sentient blobby thing that shifts itself (and, likely, its arguments) around despite no perceptible wind."
 
-check going north in Sneer Near Say: if lump say slump is touchable, say "[slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
+check going north in Sneer Near Say: if lump say slump is touchable, say "[say slump] harangues you that it really might not be worth it. You don't have the energy to argue." instead;
 
 chapter Cram Say Scram
 

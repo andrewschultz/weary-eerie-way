@@ -26,7 +26,7 @@ check going when noun is retreatish:
 
 table of dirdrops
 myrm	myrule	myitm	mytxt
-rdd	a rule	Id Lay Lid	"You feel a stinging in your back. The drawer[if drawer is moot], from wherever it hid after you fed it the [whey][end if], spit something at you! An [lid]! You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful."
+Ate Er Cray Crater	a rule	Id Lay Lid	"As you walk away, you feel a sharp sting in your [if drawer is moot]foot. When the [drawer] exploded, something must've gone flying[else]back. Ouch! The [drawer] must've thrown it when you weren't looking[end if]. You look down and find [a lid][if drawer is not moot]. You consider throwing it back, but the drawer would just throw it when YOUR back was turned, and so forth. Perhaps the [lid] will be useful elsewhere, and perhaps there is a way to deal with [the drawer][end if]."
 Bill Ill Bay	--	Weak Eek Whey	"As you go back west, you step in something icky. An open jar of [whey]. It's a bit disgusting, but you don't have to eat it. You take it."
 X Ray Wrecks	wrecks-flee rule	Own Gray Groan	"You suddenly feel a bit futile. You hear a [groan] and involuntarily copy it. For a minute or two, you can do nothing else. Then it goes away. Maybe the ability to groan will be useful sometime soon."
 Stirrer Stay	--	Kill Say Skill	"As you flee, you suddenly remember ... things, and ... stuff. About how to evade negativity. About ways to shut up people ho babble on too long. You remember ways people shut you up, for better or for worse, and you crystallize some critical ideas about how to deaden 'exciting' conversations that got nasty.[paragraph break]Indeed, you now possess [skill]."
@@ -75,7 +75,7 @@ this is the use-groan-skull rule:
 	moot eel stay steel;
 
 this is the use-whey-drawer rule:
-	say "You schlop the whey at the drawer. It sticks! And the drawer slowly quiets down. It's a bit embarrassed by all this, and it picks up its legs and moves away.[paragraph break]It's no longer blocking the way east."
+	say "You schlop the whey at the drawer. It sticks! The drawer tries to gobble it down, roaring a bit louder ... until it ingests some of the [whey]. Then it gets quieter. Then the middle drawer starts thumping up and down less, because [the whey] has stuck it together. That doesn't stop the [drawer] from lashing out violently against the walls and the floor. Thankfully, you're able to avoid it. It leaves quite a dent everywhere before exploding and somehow vaporizing.[paragraph break]After that demonstration, the way east is free."
 
 this is the use-grope-slump rule:
 	say "The [urp] seems to be just behind you as you hand the [grope] to [slump], [slump] mutters 'Grope ... [']ope ... gray...' but looks less sad, if still very gray. A few long, melodramatic sighs later, [slump] starts fixing the blimp in earnest. And it goes pretty fast, as the [slurp]'s noises get louder. The [rope] and [wire] spark as they tie together. The blimp begins chugging before emitting a forlorn 'Airway ... WHERE?!?!' Just as it gives a huge cough, the [slurp] appears in the bay![paragraph break]But ... at that moment, when it pounces with a 'LEAP! SAY!' ... an aim-flay flame bursts from the rear of the blimp.[paragraph break]The [slurp]'s voice cracks. 'Eep ... slay ...!' But of course it only goes to sleep.[paragraph break]There's nothing more to be done. You enter and soar back off to ... well, I can't tell you, because you wake up before the good part. Dreams are always like that.[paragraph break]But worse, you thought you learned Something About Life on the way. You would've applied these lessons -- how you got past the very worst nuisances -- to write a REAL self-help book, one that could help people who needed it just get by. But it all sort of slipped out when you woke up.[paragraph break]The main points serve you well over the years, though. You're even able to dish out decent advice more than you expect. So it's not too bad at all.";
@@ -174,7 +174,7 @@ to say give-grope:
 
 definition: a direction (called dir) is to-origin:
 	unless dir is south or dir is east, no;
-	if dir is east and location of player is not rdd, yes;
+	if dir is east and location of player is not Ate Er Cray Crater, yes;
 	if dir is south and location of player is not bill ill bay, yes;
 	no;
 
