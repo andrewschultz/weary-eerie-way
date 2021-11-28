@@ -128,7 +128,21 @@ dirs-gone	dirs-result
 14	"How much more exploring can there be to do? You've been through all seven places a LOT. Perhaps there is just a bit more to nail down."
 16	"With a flash, an item appears on the ground. After all this running, you're happy to see it. It is a [grope]. You're even happier to pick it up. What could it be used for?[give-grope]"
 
-to say give-grope: now player has rope gay grope;
+to say give-grope:
+	now player has rope gay grope;
+	increment the score;
+	if player is in Blimp Limp Bay:
+		say "As you handle the rope, [gump] suddenly starts talking more intelligently. Overgeneralized aphorisms become thoughtful, incisive. 'You're ready. You've got to help me ... help me help you!' [gump] looks more purposeful now, an [slump].";
+	else:
+		say "You hear surprisingly clever, decisive and exciting talk to the [list of to-origin directions]. Maybe you should go back and have a look!";
+	moot Ump Gay Gump;
+	move Ump Slay Slump to Blimp Limp Bay;
+
+definition: a direction (called dir) is to-origin:
+	unless dir is south or dir is east, no;
+	if dir is east and location of player is not rdd, yes;
+	if dir is south and location of player is not bill ill bay, yes;
+	no;
 
 Weary Eerie Way Tables ends here.
 
