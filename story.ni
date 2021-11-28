@@ -48,7 +48,7 @@ when play begins:
 the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp".
 
 instead of doing something with Urp Slay Slurp:
-	say "You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape."
+	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slump] is right there, ready to help[else]You sort of SENSE the [slurp], but you can't do anything with, or to, it. Best just to find what you need for [grump] and escape[end if]."
 
 volume rooms
 
@@ -202,7 +202,7 @@ understand "u [thing] on/with [thing]" as useoning it with.
 carry out useoning:
 	if debug-state is true, say "DEBUG: USEONing [noun] on [second noun].";
 	if noun is slurp or second noun is slurp:
-		say "You sense you can do nothing to [the slurp], even though you feel it all around[one of]. Guess you'll have to use other things together[or][stopping]."; [?? what about end]
+		say "You sense you can do nothing to [the slurp], even though [if player has rope]it's far too close[else]you feel it all around[end if][one of]. Guess you'll have to use other things together[or][stopping].";
 		now slurp-use is true;
 		the rule succeeds;
 	repeat through table of useons:
@@ -338,6 +338,13 @@ the block listening rule is not listed in any rulebook.
 
 check listening:
 	say "The [slurp]'s noises echo throughout." instead;
+
+chapter waking
+
+the block waking up rule is not listed in any rulebook.
+
+check waking up:
+	say "You worry you would wind up in Ache Way. Or a Wakey Achey Way. No. Gotta fix that blimp." instead;
 
 chapter yes and no
 
