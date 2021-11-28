@@ -98,7 +98,16 @@ Ump Bay Bump is a person. printed name is "Ump-Bay-Bump". talk-text is  "[bump] 
 
 an ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
 
-Ump Gay Gump is a person. printed name is "Ump-Gay-Gump". description is "Slightly dopey-looking, but good-hearted, and happier than [grump] for sure.". talk-text is "[gump] begins to babble how life is like a box of chocolates. Halloween half-price or not.[paragraph break]The life-enhancing aphorisms are all well and good, but you'd appreciate them more if they were intertwined with, you know, concrete action that would, you know, get back to a life to enhance."
+Ump Gay Gump is a person. printed name is "Ump-Gay-Gump". description is "Slightly dopey-looking, but good-hearted, and happier than [grump] for sure.". talk-text is "[gump] begins to babble how life is like a box of chocolates. Halloween half-price or not.[paragraph break]The life-enhancing aphorisms are all well and good, but you'd appreciate them more if they were intertwined with, you know, concrete action that would, you know, get back to a life to enhance.[paragraph break][gump-how-far]."
+
+last-gump-dirs is a number that varies.
+
+to say gump-how-far:
+	let dir-raw be (cur-dirs * 100);
+	let my-percent be  dir-raw / 16;
+	let my-remain be (the remainder after dividing dir-raw by 16) / 4;
+	say "Oh, as [the gump]'s chatter winds down, they offhandedly mention you're about [my-percent][if my-remain > 0].[no line break][25 * my-remain][end if] percent of the way to finding something special. They don't know how they know, but they do. They encourage you to [if last-gump-dirs is 0]check back whenever you need to[else if last-gump-dirs is cur-dirs]keep at it, even if you didn't make recent progress[else]keep on truckin['] along[end if]";
+	now last-gump-dirs is cur-dirs;
 
 an ump hay hump is scenery. printed name of ump hay hump is "ump-hay-hump". "You don't want to move the hump. Maybe you can get [grump] back from beneath it, somehow, if you do enough stuff right. That's how dream logic works, you guess. You hope."
 
