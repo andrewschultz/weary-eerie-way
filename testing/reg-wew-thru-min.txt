@@ -3,8 +3,8 @@
 ## GENERATOR FILE: rbr-wew-thru.txt
 
 ## minimum walkthrough
-** game: /home/andrew/prt/debug-weary-eerie-way.ulx
-** interpreter: /home/andrew/prt/glulxe -q
+** game: /home/andrew/prt/debug-weary-eerie-way.z8
+** interpreter: /home/andrew/prt/dfrotz -q
 
 * main-thru
 
@@ -47,6 +47,7 @@ by one point
 by one point
 
 >w
+>n
 >use scram on slug
 by one point
 
@@ -58,3 +59,39 @@ by one point
 >n
 >s
 
+>w
+>w
+Groan
+
+>e
+>e
+>n
+>use groan on skull
+by one point
+
+>s
+>w
+>w
+>s
+>e
+>n
+>n
+>e
+>w
+>s
+>s
+>w
+>n
+>e
+>e
+>n
+Rope
+by one point
+
+>w
+>s
+>w
+>s
+
+>use rope on slump
+Winnin' Way

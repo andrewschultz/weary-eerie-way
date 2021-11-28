@@ -2,8 +2,8 @@
 ## reg-wew-thru-max.txt
 ## GENERATOR FILE: rbr-wew-thru.txt
 
-** game: /home/andrew/prt/debug-weary-eerie-way.ulx
-** interpreter: /home/andrew/prt/glulxe -q
+** game: /home/andrew/prt/debug-weary-eerie-way.z8
+** interpreter: /home/andrew/prt/dfrotz -q
 
 * main-thru
 
@@ -72,7 +72,7 @@ by one point
 >z
 >z
 >z
-A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE KILL-SAY SKILL. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
 >e
 >w
@@ -87,13 +87,14 @@ A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WE
 >z
 >z
 >z
-A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE CRAM-SAY-SCRAM. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
 >e
 >use skill on slump
 by one point
 
 >w
+>n
 >use scram on slug
 by one point
 
@@ -110,7 +111,7 @@ by one point
 >z
 >z
 >z
-A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE 'E'LL-STAY STEEL. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
 >s
 >e
@@ -127,5 +128,53 @@ A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WE
 >z
 >z
 >z
-A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
+A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU CAAAARRRYYY THHE HARD-SAY SHARD. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
+>w
+>w
+Groan
+
+>e
+>e
+>n
+>use groan on skull
+by one point
+
+>s
+>w
+>w
+>s
+>e
+>n
+>n
+>e
+>w
+>s
+>s
+>w
+>n
+>e
+>e
+>n
+Rope
+by one point
+
+>w
+>s
+>w
+>s
+
+>n
+No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.
+
+>w
+A voice booms "Steer 'Ere! Stay!" as you try going west. You can only go north to Ate-Cray Crate and east to Bill-Ill Bay.
+
+>s
+The Steer-'Ere-Stay once again pushes you back from going south. You can only go north to Ate-Cray Crate and east to Bill-Ill Bay.
+
+>e
+No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.
+
+>use rope on slump
+Winnin' Way
