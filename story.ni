@@ -2,6 +2,8 @@
 
 volume metadata
 
+to say utt: say "[i]Under They Thunder[r]"
+
 Include (-
 
 #Undef Headline;
@@ -385,10 +387,11 @@ understand "verbs" as verbsing.
 understand "v" as verbsing.
 
 carry out verbsing:
-	say "Here are all the commands you need to win the game:[paragraph break]";
+	say "Here are all the commands you need to win the game:[line break]";
 	say "--[b]N, S, E, W[r], the four compass directions.";
-	say "--[b]U[r] (or [b]USE[r]) (item) on (another). You don't need the full name -- just one word.";
-	[say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";]
+	say "--[b]U[r] (or [b]USE[r]) (item) [b]ON[r] (another). You don't need the full name -- just one word. You also may get rid of the [b]ON[r] if only one target is available.";
+	say "[line break]This command is useless but maybe fun:[line break]";
+	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
 	the rule succeeds;
 
 volume old school verb carnage
@@ -400,7 +403,6 @@ understand the command "chop" as something new.
 understand the command "crack" as something new.
 understand the command "embrace" as something new.
 understand the command "fight" as something new.
-understand the command "give" as something new.
 understand the command "give" as something new.
 understand the command "hold" as something new.
 understand the command "hop" as something new.
