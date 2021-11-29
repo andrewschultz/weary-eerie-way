@@ -260,6 +260,7 @@ carry out useoning:
 	if noun is slurp or second noun is slurp:
 		if slurp-use is true, say "No, you still don't need to use anything on [the slurp], or vice-versa." instead;
 		abide by the slurp-nonviable rule;
+	if noun is ire way wire or second noun is ire way wire, say "[if noun is a person or second noun is a person]No, [the second noun] knows the wire's at fault. You need to find the right tools[else]No, you don't want to futz with the wire or the blimp by yourself. That looks dangerous. Get the right tools to someone else[end if]." instead;
 	repeat through table of useons:
 		if noun is u1 entry and second noun is u2 entry:
 			if there is a pre-rule entry, abide by the pre-rule entry;
@@ -320,6 +321,8 @@ carry out useing:
 	try useoning noun with RUT instead;
 
 chapter use thing on text
+
+[this has to stay in WEW because UTT has cases where you can just USE something. WEW funnels USE X to USE X ON Y.]
 
 justusing is an action applying to one thing and one topic.
 rjustusing is an action applying to one topic and one thing.
