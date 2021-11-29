@@ -92,6 +92,8 @@ chapter changing scenery
 
 slurp-bay is a truth state that varies.
 
+initial-note is a truth state that varies.
+
 after looking in Blimp Limp Bay:
 	if Ump Gray Grump is in Blimp Limp Bay and number of carried things > 0:
 		say "'Sheesh! What am I supposed to do with [i]THAT[r]?' moans [Grump], noticing [the random thing carried by the player] you just picked up. 'Of all the useless...'[paragraph break]Suddenly [Grump] falls down and seems to be almost sucked into the ground. You're not sure if [Grump] actually changes or is covered up quickly. But now where [grump] was, is a pile of hay. An [hump], if you will.";
@@ -104,6 +106,9 @@ after looking in Blimp Limp Bay:
 	if number of npcish people in blimp limp bay > 0 and last-bay-score > 0 and last-bay-score < 3:
 		say "Oh my goodness. Signs of life from the former [grump]! Things are looking up!";
 	now last-bay-score is the score;
+	if initial-note is false:
+		ital-say "type [b]ABOUT[r][i] or [b]CREDITS[r][i] to see general information, or [b]V[r][i] to see the verbs [this-game-noi]'s simplified parser uses.";
+		now initial-note is true;
 	continue the action;
 
 an ump clay clump is scenery. printed name is "ump-clay-clump". "It's just a large clump of clay. You probably can't make it into anything, or back into a human form that could help you."
@@ -431,7 +436,11 @@ understand "about" as abouting.
 understand "credits" as abouting.
 
 carry out abouting:
-	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.[paragraph break]After UTT sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.[paragraph break]The release version, due to the time limit, had no testers, but I would like to thank my testers from UTT and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]And thanks to svgrepo.com for the blimp SVG for the cover art.";
+	say "[this-game] is an entry in the 2021 EctoComp Petite Mort (English version) and was a spinoff of my IFComp 2020 game, [i]Under They Thunder[r]. It was originally written for 2020 EctoComp, but I forgot the deadline was early October 31 and not the end of the day.";
+	say "[line break]After [utt] sprawled on me (I went from being glad there was anything at all to having too much,) I sat down and limited myself to amusingly ('amusingly') surreal stuff and the best ideas that didn't fit. And this popped out.";
+	say "[line break]The release version, due to the time limit, had no testers, but I would like to thank my testers from [utt] and all who played it, as well as Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too!";
+	say "[line break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it so well for several years now, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "[line break]And thanks to svgrepo.com for the blimp SVG for the cover art.";
 	the rule succeeds;
 
 
@@ -454,9 +463,11 @@ chapter verbsing
 verbsing is an action applying to nothing.
 
 understand the command "verbs" as something new.
+understand the command "verb" as something new.
 understand the command "v" as something new.
 
 understand "verbs" as verbsing.
+understand "verb" as verbsing.
 understand "v" as verbsing.
 
 carry out verbsing:
@@ -466,6 +477,11 @@ carry out verbsing:
 	say "[line break]This command is useless but maybe fun:[line break]";
 	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
 	the rule succeeds;
+
+volume parser errors
+
+rule for printing a parser error when the latest parser error is the not a verb i recognise error (this is the generic unrecognized verb rule):
+	say "The simplified parser didn't recognize that command/first word. For a list of what works, type [b]V[r]/[b]VERB[r]/[b]VERBS[r]."
 
 volume old school verb carnage
 
