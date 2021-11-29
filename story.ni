@@ -63,7 +63,7 @@ book Blimp Limp Bay
 
 last-bay-score is a number that varies.
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if][if score > last-bay-score][new-found-ump][end if].".
+Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp-Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if][if score > last-bay-score][new-found-ump][end if].".
 
 to say new-found-ump: say ". It seems to have replaced [the entry (last-bay-score + 1) in ump-morphs] from last time you were here, which is progress, hopefully";
 
@@ -86,7 +86,7 @@ Ump Gray Grump is a person in Blimp Limp Bay. printed name is "Ump-Gray-Grump". 
 
 chapter ire way wire
 
-the ire way wire is scenery in Blimp Limp Bay. printed name of ire way wire is "ire-way wire". description is "You don't want to mess with [the wire]. It loooks confusing. [if the score is 6]But you have what [slay slump] needs![else]But [grump] could have helped and maybe could help again in the future."
+the ire way wire is scenery in Blimp Limp Bay. printed name of ire way wire is "ire-way wire". description is "You don't want to mess with [the wire] or the blimp. It loooks confusing. [if the score is 6]But you have what [slay slump] needs![else]But [grump] could have helped and maybe could help again in the future.". understand "blimp" as ire way wire.
 
 chapter changing scenery
 
@@ -476,6 +476,7 @@ carry out verbsing:
 	say "--[b]U[r] (or [b]USE[r]) (item) [b]ON[r] (another). You don't need the full name -- just one word. You also may get rid of the [b]ON[r] if only one target is available.";
 	say "[line break]This command is useless but maybe fun:[line break]";
 	say "--[b]T[r] TALKs to an NPC. There is never more than one present, so you don't need to use a subject.";
+	say "[line break]Finally, [b]RM[r] toggles long/short room names in the description, since with Pig Latin, you can figure what it is.";
 	the rule succeeds;
 
 volume parser errors

@@ -4,10 +4,6 @@ Version 1/201002 of Weary Eerie Way Globals by Andrew Schultz begins here.
 
 volume definitions and such
 
-a room has text called shorttext.
-
-for printing the name of a room (called rm) when opt-short-names is true and shorttext of rm is not empty and rm is visited: say "[shorttext of the item described]".
-
 volume room stuff
 
 definition: a direction (called d) is viable:
@@ -43,6 +39,33 @@ a room can be northed.
 volume parser stuff
 
 [most is covered in the Pig Latin globals]
+
+section What Do You Want to X
+
+Include (-
+Replace LanguageVerb;
+-) after "Definitions.i6t".
+
+Include (-
+[ LanguageVerb i;
+	switch (i) {
+	'i//','inv','inventory': print "take inventory";
+	'l//':   print "look";
+	'x//':   print "examine";
+	'z//':   print "wait";
+	'about':  print "see info about the game with ABOUT";
+	'credits': print "see the CREDITS";
+	'r//': "reach to or read";
+	't//', 'greet', 'ta', 'talk': print "talk to";
+	'verb', 'verbs', 'v//':  print "see useful verbs";
+	'v//', 'verbs', 'verb':  print "see basic verbs";
+	'xyzzy', 'plugh', 'yoho': print "say a silly spell";
+	default: rfalse;
+    }
+    rtrue;
+];
+-) after "Language.i6t".
+
 
 volume rules
 
