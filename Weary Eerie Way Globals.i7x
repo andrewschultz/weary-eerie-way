@@ -30,6 +30,11 @@ check going nowhere (this is the generic directional bounding rule):
 	if location of player is first-half:
 		say "[one of]Though the way [noun] is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with [uck]. Best stick (ha) to going [dir-room-list][or]No, [noun] would run into a wall covered with [uck]. Looks like [dir-room-list] would work better[stopping].";
 		move uck stay stuck backdrop to all first-half rooms;
+		the rule succeeds;
+	if location of player is second-half:
+		say "[one of]Though the way [noun] is pretty clearly blocked, you walk up press against the wall briefly. You hear a wailing. 'Who dares come near the [slain]?' Somehow, you doubt much will turn up by the [slain]. Better to go [dir-room-list][or]The wailing from the [slain] starts up again to the [noun]. It seems like there's easier progress [dir-room-list][stopping].";
+		move lane say slain backdrop to all second-half rooms;
+		the rule succeeds;
 	say "You can only go [dir-room-list] here. I should have a more clever message, but I don't." instead;
 
 the description of a room is usually "[psgs]."

@@ -66,20 +66,24 @@ book Urp Slay Slurp
 
 the Urp Slay Slurp is a boredrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
 
-instead of doing something with Urp Slay Slurp:
-	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]Trying to do anything directly to the [slurp] just won't work. It will probably distract you from trying to leave.";
-	abide by the slurp-nonviable rule;
+process-rule of Urp Slay Slurp is slurp-nonviable rule.
+
+process-text of Urp Slay Slurp is "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]Trying to do anything directly to the [slurp] just won't work. It will probably distract you from trying to leave.";
 
 after examining slurp:
 	abide by the slurp-nonviable rule;
 
 book Uck Stay Stuck
 
-the Uck Stay Stuck is a backdrop. printed name is "Uck-Stay-Stuck". description is "The [uck] just looks like it'd stick to you horribly."
+the Uck Stay Stuck is a boredrop. printed name is "Uck-Stay-Stuck". description is "The [uck] just looks like it'd stick to you horribly."
 
-instead of doing something with Uck Stay Stuck:
-	if current action is useing or current action is useoning or current action is examining, continue the action;
-	say "There's no point in trying to pick at the [Uck]. You need to figure how to escape.";
+process-text of Uck Stay Stuck is "There's no point in trying to pick at the [Uck]. You need to figure how to escape.";
+
+book Lane Say Slain
+
+the Lane Say Slain is a boredrop. printed name is "Uck-Stay-Stuck". description is "Fortunately, you're separated from examining [the slain] by a wall."
+
+process-text of Lane Say Slain is "The [slain] is there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.";
 
 volume rooms
 
