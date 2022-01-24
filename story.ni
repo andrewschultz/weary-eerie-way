@@ -47,6 +47,10 @@ when play begins:
 	say "You're pretty sure this is a dream, because you don't know how to fly a blimp. You've matched your own skill sets with the sort of skills you probably need to fly a blimp, and ... nothing. However, you're equally surprised when the blimp crashes. You aren't aware of anything you did wrong.[paragraph break]'That's a busted wire there in your blimp,' a gruff voice intones. 'An ire-way wire, to be precise!' You look over to see someone very drab indead.[paragraph break]'You picked a bad place to crash, what with the [slurp] hanging around. Well, maybe not so bad. I can fix your blimp. Or I could have, once. I'm [grump]. I'm not judging you, really. I'm only judging whether or not you can fix the blimp on your own. You can't, even if you changed yourself. I might. Hey, don't judge me back. I am who I am.'[paragraph break]That's not optimally helpful, but hey, it's [i]something[r].";
 	wfak;
 
+volume backdrops
+
+book Urp Slay Slurp
+
 the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
 
 instead of doing something with Urp Slay Slurp:
@@ -57,13 +61,21 @@ instead of doing something with Urp Slay Slurp:
 after examining slurp:
 	abide by the slurp-nonviable rule;
 
+book Uck Stay Stuck
+
+the Uck Stay Stuck is a backdrop. printed name is "Uck-Stay-Stuck". description is "The [uck] just looks like it'd stick to you horribly."
+
+instead of doing something with Uck Stay Stuck:
+	if current action is useing or current action is useoning or current action is examining, continue the action;
+	say "There's no point in trying to pick at the [Uck]. You need to figure how to escape.";
+
 volume rooms
 
 book Blimp Limp Bay
 
 last-bay-score is a number that varies.
 
-Blimp Limp Bay is a room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp-Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if][if score > last-bay-score][new-found-ump][end if].".
+Blimp Limp Bay is a first-half room. printed name of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer [']Ere Stay[else]Blimp-Limp Bay[end if]". shorttext of Blimp Limp Bay is "[if rope gay grope is not off-stage]Steer[else]Blimp[end if]". "Here by your blimp, with that unsightly [wire] sticking out of it, you hope to find a way to get it repaired. But how?[paragraph break][psgs][if number of npcish people in blimp limp bay is 0]. Where [grump] once stood, you notice [a random umpy thing in blimp limp bay][end if][if score > last-bay-score][new-found-ump][end if].".
 
 to say new-found-ump: say ". It seems to have replaced [the entry (last-bay-score + 1) in ump-morphs] from last time you were here, which is progress, hopefully";
 
@@ -138,7 +150,7 @@ ump-morphs is a list of things variable. ump-morphs is { ump hay hump, ump pay p
 
 book Roar Day Drawer / Ate Er Cray Crater
 
-Ate Er Cray Crater is north of Blimp Limp Bay. printed name of Ate Er Cray Crater is "[if roar day drawer is moot]Ate-[']Er-Cray Crater[else]Roar Day Drawer[end if]". shorttext of Ate Er Cray Crater is "[if roar day drawer is moot]Crater[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
+Ate Er Cray Crater is north of Blimp Limp Bay. it is first-half. printed name of Ate Er Cray Crater is "[if roar day drawer is moot]Ate-[']Er-Cray Crater[else]Roar Day Drawer[end if]". shorttext of Ate Er Cray Crater is "[if roar day drawer is moot]Crater[else]Drawer[end if]". "[psgs][if roar day drawer is not moot], but a [drawer] blocks your way east[end if]."
 
 check going east in Ate Er Cray Crater: if roar day drawer is not moot, say "The [drawer] bellows and bocks your way east." instead;
 
@@ -152,7 +164,7 @@ the Id Lay Lid is a thing. printed name is "Id-Lay Lid". description is "It's a 
 
 book Bill Ill Bay
 
-Bill Ill Bay is east of Blimp Limp Bay. printed name is "Bill-Ill Bay".
+Bill Ill Bay is east of Blimp Limp Bay. it is first-half. printed name is "Bill-Ill Bay".
 
 The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". description of not say snot is "The sneer seems almost etched on. The [snot] can barely be bothered to look at you directly.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
 
@@ -167,7 +179,7 @@ book X Ray Wrecks
 check going to X Ray Wrecks:
 	if Drawer is not moot or Snot is not moot, say "You feel impeded by some unnatural force. Perhaps there is more to do." instead;
 
-X Ray Wrecks is north of Bill Ill Bay. It is east of Ate Er Cray Crater. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
+X Ray Wrecks is north of Bill Ill Bay. It is nexus. It is east of Ate Er Cray Crater. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
 
 check going in X Ray Wrecks:
 	if noun is north or noun is east:
@@ -251,7 +263,7 @@ understand "u [thing] on/with [thing]" as useoning it with.
 
 this is the slurp-nonviable rule:
 	if slurp-use is false:
-		say "You sense you can do nothing to [the slurp], even though [if player has rope]it's far too close[else]you feel it all around[end if]. But hey, breaking the fourth wall here, that could make it a lot ambiguous to [b]USE[r] something you're carrying without specifying a subject.";
+		say "You wish it would be that easy. But you sense [the slurp] would just devour [the noun]. It's [if player has rope]far too close to ignore[else]just all around. You can feel it[end if]. But hey, breaking the fourth wall here, that could make it a lot ambiguous to [b]USE[r] something you're carrying without specifying a subject.";
 		now slurp-use is true;
 	the rule succeeds;
 
@@ -283,7 +295,7 @@ carry out useoning:
 			try useoning u1 entry with u2 entry instead;
 	abide by the useon reject rule;
 	abide by the wide ranging useon rule;
-	say "You don't seem to need to use, um, USE [the noun] on [the second noun].";
+	say "You can't think of any way to use, um, [b]USE[r] [the noun] on [the second noun].";
 	the rule succeeds.
 
 this is the useon reject rule:

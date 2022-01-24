@@ -6,6 +6,8 @@ volume definitions and such
 
 volume room stuff
 
+a room can be first-half, second-half, or nexus. a room is usually first-half.
+
 definition: a direction (called d) is viable:
 	if the room d of location of player is nowhere, no;
 	yes;
@@ -23,11 +25,12 @@ show-rooms is a truth state that varies.
 after printing the name of a direction (called d) when show-rooms is true:
 	if the room d of location of player is visited, say " to [the room d of location of player]"
 
-to say uck: say "Uck-Stay-Stuck"
-
 check going nowhere (this is the generic directional bounding rule):
 	if noun is not cardinal, say "Only the cardinal directions (north, south, east and west) are used in [this-game]." instead;
-	say "[one of]Though the way [noun] is pretty clearly blocked, you press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with [uck]. Best stick (ha) to going [dir-room-list][or]No, [noun] would run into a wall covered with [uck]. Looks like [noun] would work better[stopping]." instead;
+	if location of player is first-half:
+		say "[one of]Though the way [noun] is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with [uck]. Best stick (ha) to going [dir-room-list][or]No, [noun] would run into a wall covered with [uck]. Looks like [noun] would work better[stopping].";
+		move uck stay stuck backdrop to all first-half rooms;
+	say "You can only go [dir-room-list] here. I should have a more clever message, but I don't." instead;
 
 the description of a room is usually "[psgs]."
 
@@ -55,10 +58,10 @@ Include (-
 	'z//':   print "wait";
 	'about':  print "see info about the game with ABOUT";
 	'credits': print "see the CREDITS";
+	'rm': print "toggle room name lengths";
 	'r//': "reach to or read";
-	't//', 'greet', 'ta', 'talk': print "talk to";
+	't//', 'talk': print "talk to";
 	'verb', 'verbs', 'v//':  print "see useful verbs";
-	'v//', 'verbs', 'verb':  print "see basic verbs";
 	'xyzzy', 'plugh', 'yoho': print "say a silly spell";
 	default: rfalse;
     }
