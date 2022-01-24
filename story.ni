@@ -49,12 +49,24 @@ when play begins:
 
 volume backdrops
 
+to decide whether the action is procedural:
+	if useoning, yes;
+	if useing, yes;
+	if examining, yes;
+	no;
+
+a boredrop is a kind of backdrop. a boredrop has a rule called process-rule. a boredrop has text called process-text.
+
+instead of doing something with a boredrop:
+	if action is procedural, continue the action;
+	say "[process-text of noun][line break]";
+	abide by the process-rule of the noun;
+
 book Urp Slay Slurp
 
-the Urp Slay Slurp is a backdrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
+the Urp Slay Slurp is a boredrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
 
 instead of doing something with Urp Slay Slurp:
-	if current action is useing or current action is useoning or current action is examining, continue the action;
 	say "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]Trying to do anything directly to the [slurp] just won't work. It will probably distract you from trying to leave.";
 	abide by the slurp-nonviable rule;
 

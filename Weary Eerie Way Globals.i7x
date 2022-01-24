@@ -28,7 +28,7 @@ after printing the name of a direction (called d) when show-rooms is true:
 check going nowhere (this is the generic directional bounding rule):
 	if noun is not cardinal, say "Only the cardinal directions (north, south, east and west) are used in [this-game]." instead;
 	if location of player is first-half:
-		say "[one of]Though the way [noun] is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with [uck]. Best stick (ha) to going [dir-room-list][or]No, [noun] would run into a wall covered with [uck]. Looks like [noun] would work better[stopping].";
+		say "[one of]Though the way [noun] is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with [uck]. Best stick (ha) to going [dir-room-list][or]No, [noun] would run into a wall covered with [uck]. Looks like [dir-room-list] would work better[stopping].";
 		move uck stay stuck backdrop to all first-half rooms;
 	say "You can only go [dir-room-list] here. I should have a more clever message, but I don't." instead;
 
