@@ -26,7 +26,13 @@ when play begins:
 
 volume automation
 
-test most with "e/w/n/use whey on drawer/s/e/use lid on snot/n/w/e/s/n/e/w/n/use scram on slug/s/e/use skill on slump/n/s/w/w/e/s/n/n/e/s/n/w/e/use groan on skull".
+test first with "e/w/n/use whey on drawer/s/e/use lid on snot/n".
+
+test tweak with "w/e/s/n".
+
+test second with "e/w/n/use scram on slug/s/e/use skill on slump/n/s/w/w/e/s/n/n/e/s/n/w/e/use groan on skull".
+
+test most with "test first/test tweak/test second".
 
 test w with "test most/w/s/s/w/n/e/e/n/s/w/w/s/e/n/n/e/w/s/s/w/use rope on slump".
 
