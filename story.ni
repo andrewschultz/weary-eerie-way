@@ -81,7 +81,7 @@ process-text of Uck Stay Stuck is "There's no point in trying to pick at the [Uc
 
 book Lane Say Slain
 
-the Lane Say Slain is a boredrop. printed name is "Uck-Stay-Stuck". description is "Fortunately, you're separated from examining [the slain] by a wall."
+the Lane Say Slain is a boredrop. printed name is "Lane Say-Slain". description is "Fortunately, you're separated from examining [the slain] by a wall."
 
 process-text of Lane Say Slain is "The [slain] is there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.";
 
@@ -182,7 +182,7 @@ book Bill Ill Bay
 
 Bill Ill Bay is east of Blimp Limp Bay. it is first-half. printed name is "Bill-Ill Bay".
 
-The Not Say Snot is a person in Bill Ill Bay. "A [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". description of not say snot is "The sneer seems almost etched on. The [snot] can barely be bothered to look at you directly.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
+The Not Say Snot is a person in Bill Ill Bay. "A humanoid [snot] waits here, wagging its finger at you occasionally. It doesn't seem to want to talk, but if it did, it would probably be telling you it won't let you by right now. If it did, it'd probably be a Knot-Say Snot, twisting words to prove you don't deserve to go where you want.". description of not say snot is "The sneer seems almost etched on. The [snot] can barely be bothered to look at you directly.". printed name is "Not-Say Snot". talk-text is "The [snot] shakes their heads and shrugs at you. You won't be able to reason with them."
 
 check going north in Bill Ill Bay: if Not Say Snot is touchable, say "The [snot] wags its finger. It looks north and shudders as if to say, it's too scary to go that way. It makes an arm motion to bar you going north. It gestures to you as if to say it's doing all this FOR YOU." instead;
 
@@ -200,7 +200,7 @@ X Ray Wrecks is north of Bill Ill Bay. It is nexus. It is east of Ate Er Cray Cr
 check going in X Ray Wrecks:
 	if noun is north or noun is east:
 		if X Ray Wrecks is not wested and X Ray Wrecks is not southed:
-			say "Weird. You don't see any reason you can't go that way. But you can't." instead;
+			say "Weird. You're pulled back from going [noun]. You're not sure why, but you are." instead;
 
 chapter Own Gray Groan
 
@@ -208,7 +208,7 @@ the Own Gray Groan is a thing. description is "It's sort of ephemeral, but you c
 
 book Sneer Near Say
 
-Sneer Near Say is east of X Ray Wrecks. printed name is "Sneer Near, Say".
+Sneer Near Say is east of X Ray Wrecks. printed name is "Sneer Near, Say". it is second-half.
 
 chapter Lump Say Slump
 
@@ -222,9 +222,9 @@ Cram Say Scram is a proper-named thing. printed name is "Cram-Say-Scram". descri
 
 book Stirrer Stay
 
-Stirrer Stay is north of X Ray Wrecks.
+Stirrer Stay is north of X Ray Wrecks. it is second-half.
 
-Lug Say Slug is a person in Stirrer Stay. talk-text is "The [slug] isn't much for conversation. It would probably just get mad if you said anything. You may have to use your wits, or something you've found along the way.". printed name is "Lug-Say Slug". description of slug is "It's big and gray, even grayer than you remember [grump], and wrinkly, too. Sadly, since I offered some Alt-Say Salt in [utt], you'll need to find something else to repel the [slug]."
+Lug Say Slug is a person in Stirrer Stay. "A Lug-Say Slug waits here. Just looking at it makes you feel getting by it on your own would be an effort. But there must be a way.". talk-text is "The [slug] isn't much for conversation. It would probably just get mad if you said anything. You may have to use your wits, or something you've found along the way.". printed name is "Lug-Say Slug". description of slug is "It's big and gray, even grayer than you remember [grump], and wrinkly, too. Sadly, since I offered some Alt-Say Salt in [utt], you'll need to find something else to repel the [slug]."
 
 check going east in Stirrer Stay: if lug say slug is touchable, say "Not with [lug] around. It's pretty violent!" instead;
 
@@ -234,7 +234,7 @@ Kill Say Skill is a proper-named thing. printed name is "Kill-Say Skill". descri
 
 book Craze Raise Cay
 
-Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say. printed name is "Craze-Raise Cay".
+Craze Raise Cay is east of Stirrer Stay. It is north of Sneer Near Say. printed name is "Craze-Raise Cay". it is second-half.
 
 check going to Craze Raise Cay: if Lug Say Slug is not moot or Lump Say Slump is not moot, say "You feel a sense of dread. You're not ready yet." instead;
 
