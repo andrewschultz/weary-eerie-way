@@ -18,8 +18,12 @@ Basic talking implementation PASSED.
 
 # this is to facilitate shortcuts later
 >x slurp
-Far too indescribable for words. It's more something you can just SENSE. Speaking of sensing...
-You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. But hey, breaking the fourth wall here, that could make it a lot ambiguous to USE something you're carrying without specifying a subject.
+Far too indescribable for words. And even if you or I could do so easily, we wouldn't want to. It's there, and you need to escape it.
+Also, you sense trying to do anything directly to, or using anything on, the Urp-Slay-Slurp would be useless. Escape is the only route, finding other stuff to muck with.
+
+>x slurp
+Far too indescribable for words. And even if you or I could do so easily, we wouldn't want to. It's there, and you need to escape it.
+!Also, you sense trying to do anything directly to, or using anything on, the Urp-Slay-Slurp would be useless. Escape is the only route, finding other stuff to muck with.
 
 >e
 >w

@@ -12,6 +12,17 @@ Basic talking implementation PASSED.
 !needs a description.
 !needs talk-text.
 
+# lump together wall checks in 1st room
+>w
+Though the way west is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with Uck-Stay-Stuck. Best stick (ha) to going north and east.
+>w
+No, west would run into a wall covered with Uck-Stay-Stuck. Looks like north and east would work better.
+>eat uck
+There's no point in trying to pick at the Uck-Stay-Stuck. You need to figure how to escape.
+>undo
+>undo
+>undo
+
 >n
 >s
 
@@ -27,14 +38,12 @@ Basic talking implementation PASSED.
 >z
 A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU PPOOOSSSEEEEESSSS THHE ID-LAY LID. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
-# this is to facilitate shortcuts later
 >x slurp
-Far too indescribable for words. It's more something you can just SENSE. Speaking of sensing...
-You sense you can do nothing to the Urp-Slay-Slurp, even though you feel it all around. But hey, breaking the fourth wall here, that could make it a lot ambiguous to USE something you're carrying without specifying a subject.
-
+Far too indescribable for words. And even if you or I could do so easily, we wouldn't want to. It's there, and you need to escape it.
+Also, you sense trying to do anything directly to, or using anything on, the Urp-Slay-Slurp would be useless. Escape is the only route, finding other stuff to muck with.
 >x slurp
-Far too indescribable for words. It's more something you can just SENSE.
-!Speaking of sensing...
+Far too indescribable for words. And even if you or I could do so easily, we wouldn't want to. It's there, and you need to escape it.
+!Also, you sense trying to do anything directly to, or using anything on, the Urp-Slay-Slurp would be useless. Escape is the only route, finding other stuff to muck with.
 
 >e
 >w
@@ -52,11 +61,36 @@ Far too indescribable for words. It's more something you can just SENSE.
 A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU PPOOOSSSEEEEESSSS THHE WEAK-EEK WHEY. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
 >n
+
+# lump together wall checks in 2st room
+>w
+Though the way west is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with Uck-Stay-Stuck. Best stick (ha) to going south to Blimp-Limp Bay and east.
+>w
+No, west would run into a wall covered with Uck-Stay-Stuck. Looks like south to Blimp-Limp Bay and east would work better.
+>eat uck
+There's no point in trying to pick at the Uck-Stay-Stuck. You need to figure how to escape.
+>undo
+>undo
+>undo
+
 >use whey on drawer
 by one point
 
 >s
+
 >e
+
+# lump together wall checks in 3rd room
+>e
+Though the way east is pretty clearly blocked, you walk up press against the wall briefly. Then you have a hard time pulling away. You realize the walls must be coated with Uck-Stay-Stuck. Best stick (ha) to going north and west to Blimp-Limp Bay.
+>e
+No, east would run into a wall covered with Uck-Stay-Stuck. Looks like north and west to Blimp-Limp Bay would work better.
+>eat uck
+There's no point in trying to pick at the Uck-Stay-Stuck. You need to figure how to escape.
+>undo
+>undo
+>undo
+
 >use lid on snot
 by one point
 
@@ -67,6 +101,18 @@ by one point
 >n
 
 >n
+
+# lump together wall checks in 4th room
+>n
+Though the way north is pretty clearly blocked, you walk up press against the wall briefly. You hear a wailing. "Who dares come near the Lane Say-Slain?" Somehow, you doubt much will turn up by the Lane Say-Slain. Better to go south to X-Ray Wrecks and east.
+>w
+The wailing from the Lane Say-Slain starts up again to the west. It seems like there's easier progress south to X-Ray Wrecks and east.
+>eat slain
+The Lane Say-Slain is just sort of there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.
+>undo
+>undo
+>undo
+
 >s
 
 >z
@@ -82,6 +128,18 @@ by one point
 A voice coldly states YOOOOU HAVE NOOOTT NOOOTTIICEED YOOOOU PPOOOSSSEEEEESSSS THHE KILL-SAY SKILL. YOOOOU WWIILL NNOOTT WIN WITHOUT IT... YOU WILL NOT WIN ANYWAY...
 
 >e
+
+# lump together wall checks in 5th room
+>e
+Though the way east is pretty clearly blocked, you walk up press against the wall briefly. You hear a wailing. "Who dares come near the Lane Say-Slain?" Somehow, you doubt much will turn up by the Lane Say-Slain. Better to go north and west to X-Ray Wrecks.
+>s
+The wailing from the Lane Say-Slain starts up again to the south. It seems like there's easier progress north and west to X-Ray Wrecks.
+>eat lane
+The Lane Say-Slain is just sort of there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.
+>undo
+>undo
+>undo
+
 >w
 
 >z
@@ -144,6 +202,18 @@ Groan
 >e
 >e
 >n
+
+# lump together wall checks in 5th room
+>n
+Though the way north is pretty clearly blocked, you walk up press against the wall briefly. You hear a wailing. "Who dares come near the Lane Say-Slain?" Somehow, you doubt much will turn up by the Lane Say-Slain. Better to go south to Sneer Near, Say and west to Stirrer Stay.
+>e
+The wailing from the Lane Say-Slain starts up again to the east. It seems like there's easier progress south to Sneer Near, Say and west to Stirrer Stay.
+>eat lane
+The Lane Say-Slain is just sort of there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.
+>undo
+>undo
+>undo
+
 >use groan on skull
 by one point
 
@@ -172,16 +242,20 @@ by one point
 >s
 
 >n
-No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.
+No chance. The Urp-Slay-Slurp would catch you. You need to fix your blimp somehow! Maybe you are even carrying what you need.
 
 >w
-A voice booms "Steer 'Ere! Stay!" as you try going west. You can only go north to Ate-'Er-Cray Crater and east to Bill-Ill Bay.
+Running into walls would do no good. You need to fix your blimp somehow! Maybe you are even carrying what you need.
 
 >s
-The Steer-'Ere-Stay once again pushes you back from going south. You can only go north to Ate-'Er-Cray Crater and east to Bill-Ill Bay.
+Running into walls would do no good. You need to fix your blimp somehow! Maybe you are even carrying what you need.
 
 >e
-No way! Not with the Urp-Slay-Slurp so nearby. But perhaps you are carrying what you need to escape.
+No chance. The Urp-Slay-Slurp would catch you. You need to fix your blimp somehow! Maybe you are even carrying what you need.
+
+>d
+There's no weird direction to get out of here. Well, maybe there is, but you'd need to fix the blimp to go that way.
 
 >use rope on slump
 Winnin' Way
+
