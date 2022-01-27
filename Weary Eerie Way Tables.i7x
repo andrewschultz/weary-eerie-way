@@ -162,12 +162,19 @@ after going when skull is moot:
 
 table of dirchecks
 dirs-gone	dirs-result
+1	"Between [rooms-between], you find an empty candy wrapper. [next-wrapper]! It won't do you any good, but you pick it up and absent-mindedly stuff it in your pocket. Maybe something more useful will turn up later."
 2	"You wonder how much running around you will have to do."
+3	"Between [rooms-between], you find a second empty candy wrapper. [next-wrapper]! It won't do you any good, but you pick it up and absent-mindedly stuff it in your pocket."
 4	"You wonder if maybe the sort of running around you do is more important than the amount."
+5	"Your eyes dart to something potentially useful ... no, it's another candy wrapper: [next-wrapper]. Maybe your luck will change later."
+7	"Another candy wrapper between [rooms-between]. This time, [next-wrapper]. How many are there? When will you find something more useful?"
 8	"You're getting somewhere. You think. You hope."
+9	"And yet another empty candy wrapper between [rooms-between]! You just wish there'd be something to eat. [next-wrapper] doesn't sound too bad."
+11	"Out of force of habit, you pick up the [next-wrapper] candy wrapper you find between [rooms-between]."
 12	"You're pretty sure you explored nearly every which way."
+13	"Perhaps the seventh time will be the charm, but until then, you content yourself with having tidied up yet one more candy wrapper between [rooms-between]: [next-wrapper]."
 14	"How much more exploring can there be to do? You've been through all seven places a LOT. Perhaps there is just a bit more to nail down."
-16	"With a flash, an item appears on the ground. After all this running, you're happy to see it. It is a [grope]. You're even happier to pick it up. What could it be used for?[give-grope]"
+16	"With a flash, an item appears on the ground. After all this running and all the garbage you would up nicking, you're happy to see something potentially useful and even happier to pick it up without anything weird happening! Yes, it is clearly a [grope]. What could it be used for?[paragraph break][give-grope][run paragraph on]"
 
 to say give-grope:
 	now player has rope gay grope;
@@ -184,6 +191,19 @@ definition: a direction (called dir) is to-origin:
 	if dir is east and location of player is not Ate Er Cray Crater, yes;
 	if dir is south and location of player is not bill ill bay, yes;
 	no;
+
+chapter random dir stuff
+
+wrapper-list is a list of text variable. wrapper-list is { "Eats-Sway Sweets", "Unk Jay Junk", "Andy K Candy", "Our Bay Bar", "Ooh Gay Goo", "Um Yay Yum", "Ulp-Gay-Gulp" }.
+
+wrapper-count is a number that varies.
+
+to say next-wrapper:
+	increment wrapper-count;
+	say "[entry wrapper-count of wrapper-list]";
+
+to say rooms-between:
+	say "[location of player] and [the room noun of location of player]"
 
 Weary Eerie Way Tables ends here.
 
