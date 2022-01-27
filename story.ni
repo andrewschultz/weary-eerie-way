@@ -64,9 +64,14 @@ instead of doing something with a boredrop:
 
 book Urp Slay Slurp
 
-the Urp Slay Slurp is a boredrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. It's more something you can just SENSE[if slurp-use is false]. Speaking of sensing...[else].[end if]".
+the Urp Slay Slurp is a boredrop. it is everywhere. printed name is "Urp-Slay-Slurp". description is "Far too indescribable for words. And even if you or I could do so easily, we wouldn't want to. It's there, and you need to escape it.".
 
 process-rule of Urp Slay Slurp is slurp-nonviable rule.
+
+this is the slurp-nonviable rule:
+	if slurp-use is false, say "Also, you sense trying to do anything directly to, or using anything on, the [slurp] would be useless. Escape is the only route, finding other stuff to muck with.";
+	now slurp-use is true;
+	the rule succeeds;
 
 process-text of Urp Slay Slurp is "[if player has rope]The [slurp] is closing in, but fighting it can't be the answer. [slay slump] is right there, ready to help[else]Trying to do anything directly to the [slurp] just won't work. It will probably distract you from trying to leave.";
 
@@ -83,7 +88,7 @@ book Lane Say Slain
 
 the Lane Say Slain is a boredrop. printed name is "Lane Say-Slain". description is "Fortunately, you're separated from examining [the slain] by a wall."
 
-process-text of Lane Say Slain is "The [slain] is there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.";
+process-text of Lane Say Slain is "The [slain] is just sort of there. The more you think of it, the more you'll be distracted by fear. Best put it out of your mind.";
 
 volume rooms
 
@@ -95,10 +100,7 @@ Blimp Limp Bay is a first-half room. printed name of Blimp Limp Bay is "[if rope
 
 to say new-found-ump: say ". It seems to have replaced [the entry (last-bay-score + 1) in ump-morphs] from last time you were here, which is progress, hopefully";
 
-the force final confrontation rule is listed after the generic directional bounding rule in check going.
-
-check going in Blimp Limp Bay when Ump Slay Slump is touchable (this is the force final confrontation rule):
-	say "No way! Not with [the slurp] so nearby. But perhaps you are carrying what you need to escape." instead;
+the force final confrontation rule is listed before the generic directional bounding rule in check going.
 
 definition: a thing (called th) is umpy:
 	if th is listed in ump-morphs, yes;
@@ -107,6 +109,18 @@ definition: a thing (called th) is umpy:
 the player is in Blimp Limp Bay. description of player is "You! Ooh, yay!".
 
 understand "steer ere stay" and "steer ere" and "steer/ere stay" and "steer/ere" as Blimp Limp Bay when rope gay grope is not off-stage.
+
+to say big-end-hint:
+	say "You need to fix your blimp somehow! Maybe you are even carrying what you need"
+
+check going when player is in Blimp Limp Bay and player has rope gay grope (this is the force final confrontation rule):
+	if noun is north or noun is east:
+		say "No chance. The [slurp] would catch you. [big-end-hint].";
+	else if noun is south or noun is west:
+		say "Running into walls would do no good. [big-end-hint].";
+	else:
+		say "There's no weird direction to get out of here. Well, maybe there is, but you'd need to fix the blimp to go that way.";
+	the rule succeeds;
 
 chapter Ump Gray Grump
 
@@ -195,7 +209,7 @@ book X Ray Wrecks
 check going to X Ray Wrecks:
 	if Drawer is not moot or Snot is not moot, say "You feel impeded by some unnatural force. Perhaps there is more to do." instead;
 
-X Ray Wrecks is north of Bill Ill Bay. It is nexus. It is east of Ate Er Cray Crater. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable."
+X Ray Wrecks is north of Bill Ill Bay. It is nexus. It is east of Ate Er Cray Crater. "You don't feel irradiated here, but it's definitely an X. Well, an X turned 45 degrees. Any cardinal direction looks manageable.". printed name of X Ray Wrecks is "X-Ray Wrecks".
 
 check going in X Ray Wrecks:
 	if noun is north or noun is east:
@@ -277,7 +291,7 @@ understand "u [thing]" as useing.
 understand "use [thing] on/with [thing]" as useoning it with.
 understand "u [thing] on/with [thing]" as useoning it with.
 
-this is the slurp-nonviable rule:
+this is the slurp-nonviable-use rule:
 	if slurp-use is false:
 		say "You wish it would be that easy. But you sense [the slurp] would just devour [the noun]. It's [if player has rope]far too close to ignore[else]just all around. You can feel it[end if]. But hey, breaking the fourth wall here, that could make it a lot ambiguous to [b]USE[r] something you're carrying without specifying a subject.";
 		now slurp-use is true;
@@ -287,7 +301,7 @@ carry out useoning:
 	if debug-state is true, say "DEBUG: USEONing [noun] on [second noun].";
 	if noun is slurp or second noun is slurp:
 		if slurp-use is true, say "No, you still don't need to use anything on [the slurp], or vice-versa." instead;
-		abide by the slurp-nonviable rule;
+		abide by the slurp-nonviable-use rule;
 	if noun is ire way wire or second noun is ire way wire, say "[if noun is a person or second noun is a person]No, [the second noun] knows the wire's at fault. You need to find the right tools[else]No, you don't want to futz with the wire or the blimp by yourself. That looks dangerous. Get the right tools to someone else[end if]." instead;
 	repeat through table of useons:
 		if noun is u1 entry and second noun is u2 entry:
