@@ -194,7 +194,7 @@ definition: a direction (called dir) is to-origin:
 
 chapter random dir stuff
 
-wrapper-list is a list of text variable. wrapper-list is { "Eats-Sway Sweets", "Unk Jay Junk", "Andy K Candy", "Our Bay Bar", "Ooh Gay Goo", "Um Yay Yum", "Ulp-Gay-Gulp" }.
+wrapper-list is a list of text variable. wrapper-list is { "Eats-Sway Sweets", "Unk Jay Junk", "Andy K Candy", "Our Bay Bar", "Ooh Gay Goo", "Um Yay Yum", "Ulp-Gay-Gulp", "Oh-Nuts-Day Donuts" }.
 
 wrapper-count is a number that varies.
 
